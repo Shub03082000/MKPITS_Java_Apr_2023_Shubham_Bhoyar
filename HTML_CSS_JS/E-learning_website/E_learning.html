@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex">
+        <div class="container-fluid px-5">
+          <a class="navbar-brand" href="#">
+            <img src="/E-learning_website/logo.png" alt="logo" width="200" height="50">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link home active" aria-current="page" href="#"><i class="fa-solid fa-house-user"></i>
+                        Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-lightbulb"></i>
+                      Python
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Python Tutorials</a></li>
+                      <li><a class="dropdown-item" href="#">Program Examples</a></li>
+                      <li><a class="dropdown-item" href="#">Interview Questions</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-mug-saucer"></i>
+                      Java
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Java Tutorials</a></li>
+                      <li><a class="dropdown-item" href="#">Program Examples</a></li>
+                      <li><a class="dropdown-item" href="#">Interview Questions</a></li>
+                    </ul>
+                  </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-sharp fa-light fa-clone"></i>
+                  C Language
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">C Tutorials</a></li>
+                  <li><a class="dropdown-item" href="#">Program Examples</a></li>
+                  <li><a class="dropdown-item" href="#">Interview Questions</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-brands fa-html5"></i>
+                  web Design
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">HTML</a></li>
+                  <li><a class="dropdown-item" href="#">CSS</a></li>
+                  <li><a class="dropdown-item" href="#">Javascript</a></li>
+                  <li><a class="dropdown-item" href="#">PHP</a></li>
+                  <li><a class="dropdown-item" href="#">React JS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-regular fa-lightbulb"></i>
+                  Assignment
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Ms Office</a></li>
+                  <li><a class="dropdown-item" href="#">HTML</a></li>
+                  <li><a class="dropdown-item" href="#">CSS</a></li>
+                  <li><a class="dropdown-item" href="#">Javascript</a></li>
+                  <li><a class="dropdown-item" href="#">Jquery</a></li>
+                  <li><a class="dropdown-item" href="#">Angular JS</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- section-2 -->
+      <div class="container-fluid text-center h-25 pt-2 pb-3" style="background: #3f4079">
+        <div class="row">
+          <div class="col-md-6 my-2">
+            <h1 style="color:white; font-size:1.6em;">Programming Tutorial, Quiz and Examples...</h1>
+          </div>
+          <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <form class="d-flex w-75" role="search">
+                <input class="form-control me-2" type="search" width="200" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success w-25  bg-primary" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #f7f9fd;"></i></button>
+              </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- section 3 -->
+    <div class="container section-3 my-5" style="background-color: #f7f9fd;">
+      <div class="row gx-5">
+        <div class="col my-4 col-sm-12 col-md-4 col-lg-4">
+          <div class="card" style="max-width: 25rem;">  
+            <div class="card-body">
+              <p class="card-title"><small>PROGRAMMING</small></p>
+              <a href="https://programmingtrick.com/node-js" ><h4 class="card-text">Node JS</h4></a>
+            </div>
+            <br>
+            <hr class="mb-0">
+            <div class="card-body d-flex align-items-center justify-content-between ">
+              <a href="https://programmingtrick.com/node-js-examples" class="card-link "><h6><i class="fa-solid fa-code pe-1"></i>PROGRAMS</h6></a>
+              <a href="https://programmingtrick.com/node-js" class="card-link card-btn"><i class="fa-solid fa-book-open pe-2"></i>Start Learning</buton></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col my-4 col-sm-12 col-md-4 col-lg-4">
+          <div class="card" style="max-width: 25rem;">  
+            <div class="card-body">
+              <p class="card-title"><small>PROGRAMMING</small></p>
+              <a href="https://programmingtrick.com/angular-js"><h4 class="card-text">Angular JS</h4></a>
+            </div>
+            <br>
+            <hr class="mb-0">
+            <div class="card-body d-flex align-items-center justify-content-between ">
+              <a href="#" class="card-link "><h6><i class="fa-solid fa-code pe-1"></i>PROGRAMS</h6></a>
+              <a href="https://programmingtrick.com/angular-js" class="card-link card-btn"><i class="fa-solid fa-book-open pe-2"></i>Start Learning</buton></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col my-4 col-sm-12 col-md-4 col-lg-4">
+          <div class="card" style="max-width: 25rem;">  
+            <div class="card-body">
+              <p class="card-title"><small>WEB DEVELOPMENT</small></p>
+              <a href="https://programmingtrick.com/html"><h4 class="card-text">HTML</h4></a>
+            </div>
+            <br>
+            <hr class="mb-0">
+            <div class="card-body d-flex align-items-center justify-content-between ">
+              <a href="https://programmingtrick.com/html-examples" class="card-link "><h6><i class="fa-solid fa-code pe-1"></i>PROGRAMS</h6></a>
+              <a href="https://programmingtrick.com/html" class="card-link card-btn"><i class="fa-solid fa-book-open pe-2"></i>Start Learning</buton></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col my-4 col-sm-12 col-md-4 col-lg-4">
+          <div class="card" style="max-width: 25rem;">  
+            <div class="card-body">
+              <p class="card-title"><small>PROGRAMMING</small></p>
+              <a href="https://programmingtrick.com/react-js"><h4 class="card-text">React JS</h4></a>
+            </div>
+            <br>
+            <hr class="mb-0">
+            <div class="card-body d-flex align-items-center justify-content-between ">
+              <a href="https://programmingtrick.com/react-examples" class="card-link "><h6><i class="fa-solid fa-code pe-1"></i>PROGRAMS</h6></a>
+              <a href="https://programmingtrick.com/react-js" class="card-link card-btn"><i class="fa-solid fa-book-open pe-2"></i>Start Learning</buton></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col my-4 col-sm-12 col-md-4 col-lg-4">
+          <div class="card" style="max-width: 25rem;">  
+            <div class="card-body">
+              <p class="card-title"><small>PROGRAMMING</small></p>
+              <a href="https://programmingtrick.com/python-programming"><h4 class="card-text">Python Programming</h4></a>
+            </div>
+            <br>
+            <hr class="mb-0">
+            <div class="card-body d-flex align-items-center justify-content-between ">
+              <a href="https://programmingtrick.com/python-examples" class="card-link "><h6><i class="fa-solid fa-code pe-1"></i>PROGRAMS</h6></a>
+              <a href="https://programmingtrick.com/python-programming" class="card-link card-btn"><i class="fa-solid fa-book-open pe-2"></i>Start Learning</buton></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col my-4 col-sm-12 col-md-4 col-lg-4">
+          <div class="card" style="max-width: 25rem;">  
+            <div class="card-body">
+              <p class="card-title"><small>PROGRAMMING</small></p>
+              <a href="https://programmingtrick.com/java-programming"><h4 class="card-text">Java Programming</h4></a>
+            </div>
+            <br>
+            <hr class="mb-0">
+            <div class="card-body d-flex align-items-center justify-content-between ">
+              <a href="https://programmingtrick.com/java-examples" class="card-link "><h6><i class="fa-solid fa-code pe-1"></i>PROGRAMS</h6></a>
+              <a href="https://programmingtrick.com/java-programming" class="card-link card-btn"><i class="fa-solid fa-book-open pe-2"></i>Start Learning</buton></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col my-4 col-sm-12 col-md-4 col-lg-4">
+          <div class="card" style="max-width: 25rem;">  
+            <div class="card-body">
+              <p class="card-title"><small>PROGRAMMING</small></p>
+              <a href="https://programmingtrick.com/cpp-programming"><h4 class="card-text">C++ Programming</h4></a>
+            </div>
+            <br>
+            <hr class="mb-0">
+            <div class="card-body d-flex align-items-center justify-content-between ">
+              <a href="https://programmingtrick.com/cpp-programming-examples" class="card-link "><h6><i class="fa-solid fa-code pe-1"></i>PROGRAMS</h6></a>
+              <a href="https://programmingtrick.com/cpp-programming" class="card-link card-btn"><i class="fa-solid fa-book-open pe-2"></i>Start Learning</buton></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col my-4 col-sm-12 col-md-4 col-lg-4">
+          <div class="card" style="max-width: 25rem;">  
+            <div class="card-body">
+              <p class="card-title"><small>PROGRAMMING</small></p>
+              <a href="https://programmingtrick.com/c-programming"><h4 class="card-text">C Programming</h4></a>
+            </div>
+            <br>
+            <hr class="mb-0">
+            <div class="card-body d-flex align-items-center justify-content-between ">
+              <a href="https://programmingtrick.com/c-programming-examples" class="card-link "><h6><i class="fa-solid fa-code pe-1"></i>PROGRAMS</h6></a>
+              <a href="https://programmingtrick.com/c-programming" class="card-link card-btn"><i class="fa-solid fa-book-open pe-2"></i>Start Learning</buton></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col my-4 col-sm-12 col-md-4 col-lg-4">
+          <div class="card" style="max-width: 25rem;">  
+            <div class="card-body">
+              <p class="card-title"><small>WEB DEVELOPMENT</small></p>
+              <a href="https://programmingtrick.com/css-tutorial"><h4 class="card-text">CSS</h4></a>
+            </div>
+            <br>
+            <hr class="mb-0">
+            <div class="card-body d-flex align-items-center justify-content-between ">
+              <a href="https://programmingtrick.com/css-examples" class="card-link "><h6><i class="fa-solid fa-code pe-1"></i>PROGRAMS</h6></a>
+              <a href="https://programmingtrick.com/css-tutorial" class="card-link card-btn"><i class="fa-solid fa-book-open pe-2"></i>Start Learning</buton></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col my-4 col-sm-12 col-md-4 col-lg-4">
+          <div class="card" style="max-width: 25rem;">  
+            <div class="card-body">
+              <p class="card-title"><small>WEB DEVELOPMENT</small></p>
+              <a href="https://programmingtrick.com/javascript"><h4 class="card-text">Java Script</h4></a>
+            </div>
+            <br>
+            <hr class="mb-0">
+            <div class="card-body d-flex align-items-center justify-content-between ">
+              <a href="https://programmingtrick.com/javascript-examples" class="card-link "><h6><i class="fa-solid fa-code pe-1"></i>PROGRAMS</h6></a>
+              <a href="https://programmingtrick.com/javascript" class="card-link card-btn"><i class="fa-solid fa-book-open pe-2"></i>Start Learning</buton></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col my-4 col-sm-12 col-md-4 col-lg-4">
+          <div class="card" style="max-width: 25rem;">  
+            <div class="card-body">
+              <p class="card-title"><small>WEB DEVELOPMENT</small></p>
+              <a href="https://programmingtrick.com/php"><h4 class="card-text">PHP</h4></a>
+            </div>
+            <br>
+            <hr class="mb-0">
+            <div class="card-body d-flex align-items-center justify-content-between ">
+              <a href="https://programmingtrick.com/php-examples" class="card-link "><h6><i class="fa-solid fa-code pe-1"></i>PROGRAMS</h6></a>
+              <a href="https://programmingtrick.com/php" class="card-link card-btn"><i class="fa-solid fa-book-open pe-2"></i>Start Learning</buton></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col my-4 col-sm-12 col-md-4 col-lg-4">
+          <div class="card" style="max-width: 25rem;">  
+            <div class="card-body">
+              <p class="card-title"><small>PROGRAMMING</small></p>
+              <a href="https://programmingtrick.com/internet-of-things"><h4 class="card-text">Internet of Things</h4></a>
+            </div>
+            <br>
+            <hr class="mb-0">
+            <div class="card-body d-flex align-items-center justify-content-between ">
+              <a href="https://programmingtrick.com/iot-examples" class="card-link "><h6><i class="fa-solid fa-code pe-1"></i>PROGRAMS</h6></a>
+              <a href="https://programmingtrick.com/internet-of-things" class="card-link card-btn"><i class="fa-solid fa-book-open pe-2"></i>Start Learning</buton></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col my-4 col-sm-12 col-md-4 col-lg-4">
+          <div class="card" style="max-width: 25rem;">  
+            <div class="card-body">
+              <p class="card-title"><small>ACCOUNTING</small></p>
+              <a href="https://programmingtrick.com/tally-prime"><h4 class="card-text">Tally Prime</h4></a>
+            </div>
+            <br>
+            <hr class="mb-0">
+            <div class="card-body d-flex align-items-center justify-content-between ">
+              <a href="https://programmingtrick.com/" class="card-link "><h6><i class="fa-solid fa-code pe-1"></i>PROGRAMS</h6></a>
+              <a href="https://programmingtrick.com/tally-prime" class="card-link card-btn"><i class="fa-solid fa-book-open pe-2"></i>Start Learning</buton></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col my-4 col-sm-12 col-md-4 col-lg-4">
+          <div class="card" style="max-width: 25rem;">  
+            <div class="card-body">
+              <p class="card-title"><small>ACCOUNTING</small></p>
+              <a href="https://programmingtrick.com/tally"><h4 class="card-text">Tally ERP</h4></a>
+            </div>
+            <br>
+            <hr class="mb-0">
+            <div class="card-body d-flex align-items-center justify-content-between ">
+              <a href="https://programmingtrick.com/" class="card-link "><h6><i class="fa-solid fa-code pe-1"></i>PROGRAMS</h6></a>
+              <a href="https://programmingtrick.com/tally" class="card-link card-btn"><i class="fa-solid fa-book-open pe-2"></i>Start Learning</buton></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- section 4 -->
+        <div class="container footer">
+          <div class="row">
+            <div class="col-lg-3 col-md-12 ">
+              <p>
+                <img src="logo.png" alt="" width="163px" height="34">
+              </p>
+              <div id="___ytsubscribe_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 172px; height: 48px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 172px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 48px;" tabindex="0" vspace="0" width="100%" id="I0_1684586778154" name="I0_1684586778154" src="https://www.youtube.com/subscribe_embed?usegapi=1&amp;channelid=UCEM3WMk0Wzo7yxaqCe5esOg&amp;layout=full&amp;count=default&amp;origin=https%3A%2F%2Fprogrammingtrick.com&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.yTSbWrSe458.O%2Fd%3D1%2Frs%3DAHpOoo_5dpdVCMe_LPx1yH-hHA2M85TB-Q%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1684586778154&amp;_gfid=I0_1684586778154&amp;parent=https%3A%2F%2Fprogrammingtrick.com&amp;pfname=&amp;rpctoken=15511884" data-gapiattached="true"></iframe></div>
+              <ul type="none" class="contact">
+                <li>
+                  <a href="#"><i class="fa-solid fa-code pe-1"></i>Important Resources</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-code pe-1"></i>Blog</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <h5>USEFUL LINKS</h5>
+              <ul type="none" class="contact">
+                <li>
+                  <a href="#"><i class="fa-solid fa-code pe-1"></i>Python Tutorial</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-code pe-1"></i>Java Tutorial</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-code pe-1"></i>C Tutorial</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-code pe-1"></i>CSS Reference</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-code pe-1"></i>HTML Reference</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-code pe-1"></i>Lab Assignment</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <h5>OTHER WEBSITES</h5>
+              <ul type="none" class="contact">
+                <li>
+                  <a href="#"><i class="fa-solid fa-earth-europe"></i>Infomax Academy</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-earth-europe"></i>CCC Practice Test</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-earth-europe"></i>CCC Online Test</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-earth-europe"></i>O Level Exam</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-earth-europe"></i>One Day Exam Preparation</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-earth-europe"></i>Online Career Counselling</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-earth-europe"></i>Sarkari Exam Quiz</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <h5>CONTACT WITH US</h5>
+              <ul type="none" class="contact">
+                <li>
+                  <a href="#"><i class="fa-solid fa-envelope"></i>info@programmingtrick.com</a>
+                </li>
+              </ul>
+              <div class="follow_us">
+                <h5>FOLLOW US</h5>
+                <ul type="none" class="d-flex">
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <hr>
+          <div class="row copyright my-4">
+            <div class="col-md-6 d-flex justify-content-center">
+              <a href="#" class="text-decoration-none">Terms and conditions | Sitemap</a>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+              © 2023 Infomax Academy Powered By WebInfomax IT Solutions
+            </div>
+          </div>
+
+
+    
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
