@@ -1,0 +1,15 @@
+h1{
+    /* border: 2px solid rgb(120,200,250); */
+    /* border: 2px dashed rgb(120,200,250); */
+    border: 5px double rgb(120,200,250);
+    /* border: 2px dotted rgb(120,200,250); */
+}
+h2{
+    padding: 14px 22px;
+    border-top: 5px solid red;
+    border-right: 5px dotted green;
+    border-bottom: 5px dashed orange;
+    border-left: 5px double pink;
+    display: flex;
+    justify-content: center;
+}

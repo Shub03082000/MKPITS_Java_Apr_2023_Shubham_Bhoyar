@@ -1,0 +1,60 @@
+.div1{
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+    color: black;
+    border-top: 5px solid maroon;;
+    border-left: 5px dashed rgb(240, 28, 28);
+    border-right: 3px dotted gray;
+    border-bottom: 3px double rgb(25, 54, 243);
+    margin-bottom: 20px;
+    /* border-radius: 20px; */
+    border-top: hidden;
+    border-radius: 50%;
+}
+.div2{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: black;
+    border-top: 5px solid maroon;;
+    border-left: 5px dashed rgb(240, 28, 28);
+    border-right: 5px dotted gray;
+    border-bottom: 5px double rgb(25, 25, 243);
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border-top: hidden;
+    border-radius: 50%;
+}
+
+.div3{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    color: black;
+    border-top: 5px solid maroon;
+    border-left: 5px dashed rgb(240, 28, 28);
+    border-right: 5px dotted gray;
+    border-bottom: 5px double rgb(25, 29, 243);
+    margin-bottom: 20px;
+    /* border-top-right-radius: 20px; */
+    border-radius: 20px;
+    border-top: hidden;
+    border-radius: 50%;
+}
+
+.div4{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(47, 224, 255);
+    color: black;
+    border-top: 5px solid maroon;
+    border-left: 5px dashed rgb(240, 28, 28);
+    border-right: 5px dotted gray;
+    border-bottom: 5px double rgb(25, 65, 243);
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border-top: hidden;
+    border-radius: 50%;
+}
+
