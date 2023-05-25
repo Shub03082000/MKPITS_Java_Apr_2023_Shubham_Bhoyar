@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor appointment form</title>
+    <style>
+        body{
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <table width="70%" cellpadding="4" align="center">
+        <tr>
+            <td rowspan="10">
+                <img src="doc.png" alt="doctor image" width="500px">
+            </td>
+            <td colspan="3">
+                <h1 align="center">Doctor Appointment Form</h1>
+                <hr color="red">
+            </td>
+            <tr>
+                <td>
+                    <label for="appointment">Appointment Date</label>
+                </td>
+                <td>
+                    <input type="date" id="appointment">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="a_time">Appointment Time</label>
+                </td>
+                <td>
+                    <input type="time" id="a_time">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name">Name</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="First" id="name">
+                    <input type="text" placeholder="Last" id="name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Gender</label>
+                </td>
+                <td>
+                    <input type="radio" name="gender" id="gender">Male
+                    <input type="radio" name="gender" id="gender">Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone">Phone</label>
+                </td>
+                <td>
+                    <input type="number" placeholder="####">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="C&S">Address</label>
+                </td>
+                <td>
+                    <input type="text" id="C&S" placeholder="city">
+                    <input type="text" id="C&S" placeholder="state">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="query">Your Query</label>
+                </td>
+                <td>
+                    <textarea id="query" cols="40" rows="4"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="a_type">Appointment Type</label>
+                </td>
+                <td colspan="2">
+                    Select which appointment type(s) you require<br>
+                    <input type="checkbox">Cervix checkup<br>
+                    <input type="checkbox">Cervix exam<br>
+                    <input type="checkbox">Cervix x-ray<br>
+                    <input type="checkbox">Cervix ultrasound
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <input type="submit" value="Send">
+                </td>
+            </tr>
+        </tr>
+    </table>
+</body>
+</html>

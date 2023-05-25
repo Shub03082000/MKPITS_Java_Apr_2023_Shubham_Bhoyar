@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Assignment 7</title>
+    <style>
+        table{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table cellpadding="6" width="40%" align="center">
+            <tr>
+                <th colspan="2">
+                    <h2>Form</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="f_name">First Name</label>
+                </td>
+                <td>
+                    <input type="text" id="f_name" placeholder="Enter your name">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="f_name">Last Name</label>
+                </td>
+                <td>
+                    <input type="text" id="f_name" placeholder="Enter Last name">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="dofb">DOB</label>
+                </td>
+                <td>
+                    <input type="date" id="dofb">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="dob">Email</label>
+                </td>
+                <td>
+                    <input type="date" id="dob" placeholder="Enter your email">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="mobile_no">Mobile No</label>
+                </td>
+                <td>
+                    <input type="number" id="mobile_no" >
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pass">Password</label>
+                </td>
+                <td>
+                    <input type="password" id="pass">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="gender">Gender</label>
+                </td>
+                <td>
+                    <input type="radio" id="gender" name="gender">Male &nbsp;
+                    <input type="radio" id="gender" name="gender">Female &nbsp;
+                    <input type="radio" id="gender" name="gender">Other
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="course">Courses</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="course">Java
+                    <input type="checkbox" id="course">Python <br>
+                    <input type="checkbox" id="course">Data Structure<br>
+                    <input type="checkbox" id="course">Dot Net 
+                    <input type="checkbox" id="course">SQL
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="S_date">Start Date</label>
+                </td>
+                <td>
+                    <input type="date" id="S_date">
+                </td>
+            <tr>
+                <td>
+                    <label for="E_date">End Date</label>
+                </td>
+                <td>
+                    <input type="date" id="E_date">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="address">Address</label>
+                </td>
+                <td>
+                    <textarea id="address" cols="40" rows="5"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="state">State</label>
+                </td>
+                <td>
+                    <select id="state">
+                        <option value="select" selected>-- Select state --</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Chattisgarh">Chattisgarh</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="MP">MP</option>
+                        <option value="UP">UP</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="city">City</label>
+                </td>
+                <td>
+                    <select id="city">
+                        <option value="select" selected>-- Select city --</option>
+                        <option value="Nagpur">Nagpur</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Nashik">Nashik</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Banglore">Banglore</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="p_code">Pin code</label>
+                </td>
+                <td>
+                    <input type="text" id="p_code">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="resume">Add Resume</label>
+                </td>
+                <td>
+                    <input type="file" id="resume">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="photo">Upload photo</label>
+                </td>
+                <td>
+                    <input type="file" id="photo">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">&nbsp;&nbsp;&nbsp;
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

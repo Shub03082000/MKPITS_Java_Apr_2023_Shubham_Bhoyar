@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Assignment 6</title>
+    <style>
+        table{
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table cellpadding="8" width="30%" align="center">
+            <tr>
+                <th colspan="2"><h2>Registration Form</h2></th>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="f_name">Full Name</label>
+                </td>
+                <td>
+                    <input type="text" id="f_name">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input type="email" id="email" >
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="address">Address</label>
+                </td>
+                <td>
+                    <input type="text" id="address">Line 1 <br>
+                    <input type="text" id="address">Line 2
+                </td>    
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="state">State</label>
+                </td>
+                <td>
+                    <select id="state">
+                        <option value="select" selected>-- Select state --</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Chattisgarh">Chattisgarh</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="MP">MP</option>
+                        <option value="UP">UP</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="country">Country</label>
+                </td>
+                <td>
+                    <select id="country">
+                        <option value="select" selected>-- Select country --</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="Russia">Russia</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="image">Add Image</label>
+                </td>
+                <td>
+                    <input type="file" id="image">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pass">Create Password</label>
+                </td>
+                <td>
+                    <input type="password" id="pass">
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center" colspan="2">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

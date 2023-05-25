@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+    <style>
+        input, textarea, select{
+            border: 2px solid red;
+            padding: 5px;
+        }
+        h2{
+            color: rgb(200, 9, 9);
+        }
+        td{
+            align-items: center;
+        }
+        label{
+            font-weight: bold;
+            color: maroon;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table border align="center" cellspacing="0" width="40%" height="700px" cellpadding="8">
+            <tr color="red">
+                <th colspan="2"><h2>STUDENT REGISTRATION FORM</h2></th>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="f_name">First Name</label>
+                </td>
+                <td>
+                    <input type="text" id="f_name" placeholder="Enter your name">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="f_name">Last Name</label>
+                </td>
+                <td>
+                    <input type="text" id="f_name" placeholder="Enter Last name">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="gender">Gender</label>
+                </td>
+                <td>
+                    <input type="radio" name="gender" id="gender">Male &nbsp;
+                    <input type="radio" name="gender" id="gender">Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="age">Age</label>
+                </td>
+                <td>
+                    <input type="number" id="age">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="dob">Email</label>
+                </td>
+                <td>
+                    <input type="date" id="dob" placeholder="Enter your email">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pass">Password</label>
+                </td>
+                <td>
+                    <input type="password" id="pass" placeholder="Enter your password">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="cfp">Confirm Password</label>
+                </td>
+                <td>
+                    <input type="password" id="cfp" placeholder="confirm password">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="text">Phone Number</label>
+                </td>
+                <td>
+                    <select>
+                        <option value="+91" selected>+91</option>
+                        <option value="+61">+61</option>
+                    </select>
+                    <input type="text" id="text">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="address">Address</label>
+                </td>
+                <td>
+                    <textarea id="address" cols="40" rows="5"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="state">State</label>
+                </td>
+                <td>
+                    <select id="state">
+                        <option value="select" selected>-- select your state --</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="bihar">Bihar</option>
+                        <option value="goa">Goa</option>
+                        <option value="chattisgarh">Chattisgarh</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="p_code">Pin code</label>
+                </td>
+                <td>
+                    <input type="text" id="p_code">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="hobbies">Hobbies</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="hobbies">Music
+                    <input type="checkbox" id="hobbies">Movies
+                    <input type="checkbox" id="hobbies">Sports            
+                    <input type="checkbox" id="hobbies">Travels
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="photo">Upload photo</label>
+                </td>
+                <td>
+                    <input type="file" id="photo">
+                </td>
+            </tr>
+
+            <tr align="center">
+                <td colspan="2">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+            
+        </table>
+    </form>
+</body>
+</html>

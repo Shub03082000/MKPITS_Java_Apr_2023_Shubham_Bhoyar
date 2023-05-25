@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Assignment 4</title>
+    <style>
+        table{
+            border: 5px dashed black;
+            background: linear-gradient(135deg, #80E292, #6FCAF3);
+        }
+        input{
+            padding: 6px;
+        }
+        a{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <a href="#"><h1>Student Registration Form Using Table in HTML</h1></a>
+        <table width="50%" height="700px" align="center" cellpadding="8">
+            <tr>
+                <td>
+                    <label for="f_name">First Name</label>
+                </td>
+                <td>
+                    <input type="text" id="f_name" placeholder="Ghanedra">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="L_name">Last Name</label>
+                </td>
+                <td>
+                    <input type="text" id="L_name" placeholder="Yadav">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="email">Email ID</label>
+                </td>
+                <td>
+                    <input type="email" id="email" placeholder="yghagendra@gmail.com">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="mobile_no">Mobile Number</label>
+                </td>
+                <td>
+                    <input type="number" id="mobile_no" placeholder="7842xxxxxx">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="gender">Gender</label>
+                </td>
+                <td>
+                    <input type="radio" id="gender" name="gender">Male &nbsp;
+                    <input type="radio" id="gender" name="gender">Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="dofb">Date of Birth(DOB)</label>
+                </td>
+                <td>
+                    <input type="date" id="dofb">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="address">Address</label>
+                </td>
+                <td>
+                    <textarea id="address" cols="40" rows="5"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="city">City</label>
+                </td>
+                <td>
+                    <input type="text" id="city" placeholder="Banglore">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="p_code">Pin code</label>
+                </td>
+                <td>
+                    <input type="number" id="p_code" placeholder="560036">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="state">State</label>
+                </td>
+                <td>
+                    <input type="text" id="state" placeholder="Karnataka">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="country">Country</label>
+                </td>
+                <td>
+                    <input type="text" id="country" placeholder="India">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="hobbies">Hobbies</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="hobbies">Drawing
+                    <input type="checkbox" id="hobbies">Singing
+                    <input type="checkbox" id="hobbies">Dancing           
+                    <input type="checkbox" id="hobbies">Sketching<br>
+                    <input type="checkbox" id="hobbies">Others
+                    <input type="text" id="hobbies" placeholder="Ex-Teaching">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="qualification">Qualifications</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="qualification">High School(10th)<br>
+                    <input type="checkbox" id="qualification">High School(12th)<br>
+                    <input type="checkbox" id="qualification">Graduation(Bachlors)<br>
+                    <input type="checkbox" id="qualification">Post Graduation(Masters)<br>
+                    <input type="checkbox" id="qualification">phd
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="gender">Courses Applied for</label>
+                </td>
+                <td>
+                    <input type="radio" id="course" name="course">BCA(Bachlor of Computer Application) &nbsp;<br>
+                    <input type="radio" id="course" name="course">B.com(Bachlor of Commerse) &nbsp;<br>
+                    <input type="radio" id="course" name="course">B.sc(Bachlor of Science) &nbsp;<br>
+                    <input type="radio" id="course" name="course">BA(Bachlor of Arts) &nbsp;<br>
+                    <input type="radio" id="course" name="course">MCA(Masters of computer Applications) &nbsp;<br>
+                    <input type="radio" id="course" name="course">M.com(Master of commerse) &nbsp;<br>
+                    <input type="radio" id="course" name="course">M.sc(Master of science) &nbsp;<br>
+                    <input type="radio" id="course" name="course">MA(Masters of Arts)
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+
+            
+        </table>
+    </form>
+</body>
+</html>
