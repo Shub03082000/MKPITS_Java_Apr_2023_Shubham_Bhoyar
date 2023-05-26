@@ -1,0 +1,28 @@
+.img1{
+    width: 280px;
+    height: 280px;
+    opacity: 0.25;
+    display: inline-block;
+    margin-right: 20px;
+}
+.img2{
+    width: 280px;
+    height: 280px;
+    opacity: 50%;
+    display: inline-block;
+    margin-right: 20px;
+}
+.img3{
+    width: 280px;
+    height: 280px;
+    opacity: 75%;
+    display: inline-block;
+    margin-right: 20px;
+}
+.img4{
+    width: 280px;
+    height: 280px;
+    opacity: 1;
+    display: inline-block;
+    margin-right: 20px;
+}
