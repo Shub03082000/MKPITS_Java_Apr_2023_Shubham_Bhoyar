@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+}
+ul{
+    background-color: rgba(206, 32, 218, 0.454);
+    display: flex;
+    align-items: center;
+}
+li{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    font-size: 28px;
+    padding: 14px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+a:hover{
+    color: white;
+    border-right: 5px solid brown;
+    border-top: 3px dotted brown;
+}
+li img{
+    padding: 10px 18px;
+    /* margin-left: -40px; */
+    margin-right: 700px;
+} 
+
