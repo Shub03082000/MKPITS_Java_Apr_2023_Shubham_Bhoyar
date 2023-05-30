@@ -1,5 +1,5 @@
 ul{
-    background-color: yellowgreen;
+    background-color: rgba(50, 205, 171, 0.37);
     display: flex;
     align-items: center;
 }
@@ -9,12 +9,12 @@ li{
     align-items: center;
 }
 a{
-    text-decoration: none;
     font-size: 28px;
     padding: 14px;
 }
 a:hover{
-    color: wheat;
+    color: rosybrown;
+    text-decoration: none;
 }
 li img{
     padding: 12px 22px;
