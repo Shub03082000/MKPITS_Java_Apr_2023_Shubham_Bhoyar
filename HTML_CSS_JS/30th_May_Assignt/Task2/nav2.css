@@ -1,0 +1,25 @@
+ul{
+    background-color: yellowgreen;
+    display: flex;
+    align-items: center;
+}
+li{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-size: 28px;
+    padding: 14px;
+}
+a:hover{
+    color: wheat;
+}
+li img{
+    padding: 12px 22px;
+    /* margin-left: -40px; */
+    border-radius: 50%;
+    margin-right: 700px;
+} 
+
