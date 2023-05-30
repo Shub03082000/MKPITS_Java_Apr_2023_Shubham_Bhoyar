@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+}
+ul{
+    background-color: rgba(206, 32, 218, 0.454);
+    display: flex;
+    align-items: center;
+}
+ul:hover{
+    background-color: rgb(142, 228, 231);
+}
+li{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    font-size: 28px;
+    text-decoration: none;
+    margin-right: 40px;
+    border-bottom: 4px solid whitesmoke;
+}
+a:hover{
+    border-bottom: 4px solid gold;
+    color: black;
+}
+li img{
+    padding: 7px 10px;
+    /* margin-left: -40px; */
+    margin-right: 700px;
+} 
+li img:hover{
+    opacity: 0.75;
+}
+
