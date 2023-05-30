@@ -1,0 +1,12 @@
+.border{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    /* border: 3px solid aqua; */
+    /* outline: 5px dashed gold; */
+    margin-bottom: 30px;
+    /* border-width: 20px; */
+}
+body{
+    background-color: darkcyan;
+}
