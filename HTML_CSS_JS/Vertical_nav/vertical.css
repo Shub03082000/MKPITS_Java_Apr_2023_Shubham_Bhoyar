@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+}
+ul{
+    background-color: black;
+    text-align: left;
+    list-style-type: none;
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+}
+li a{
+    display: block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 30px;
+    float: left;
+    border-left: 4px solid yellowgreen;
+    border-radius: 10px;
+    color: palevioletred;
+}
+
+li a:hover{
+    background-color: pink;
+    border-bottom: 4px solid aqua;
+    color: black;
+}
+.active{
+    background-color: pink;
+    color: black;
+}
+.para{
+    margin-left: 250px;
+}
