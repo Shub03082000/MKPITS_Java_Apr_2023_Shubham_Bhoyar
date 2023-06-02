@@ -1,0 +1,10 @@
+.div1{
+    width: 80px;
+    height: 180px;
+    background-color: cornflowerblue;
+    border: 3px solid black;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
