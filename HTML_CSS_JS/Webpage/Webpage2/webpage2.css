@@ -1,0 +1,51 @@
+/* section 1 */
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar .main .navbar-brand img{
+    border-radius: 50%;
+}
+.navbar{
+    /* position: sticky; */
+    z-index: 1;
+    width: 100%;
+    opacity: 0.95;
+    /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=cad394&c2=a4cdf3&gt=l&gd=dtl
+*/
+background: #CAD394;
+background: linear-gradient(135deg, #CAD394, #A4CDF3);
+}
+.collapse .navbar-nav .nav-item{
+    font-size: 20px;
+} 
+.collapse .navbar-nav .nav-item .nav-link{
+    color: white;
+    font-weight: 500;
+}
+.collapse .navbar-nav .nav-item .active{
+    color: palevioletred;
+}
+.collapse .navbar-nav .nav-item .nav-link:hover{
+    color: yellow;
+    font-size: 22px;
+}
+
+
+/* section 2 */
+.carousel-inner .carousel-item video{
+    width: 100%;
+    margin: 0 auto;
+}
+.section-4 .row .card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+video{
+    width: 100%;
+    height: 600px;
+}
+h1{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
