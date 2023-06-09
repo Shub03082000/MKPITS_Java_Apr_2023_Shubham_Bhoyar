@@ -35,3 +35,13 @@
 .section-4 .row .card{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+h1{
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: 5px 5px 10px black;
+}
+.section-4 .row .card:hover{
+    transform: scale(1.1);
+}
+.container-fluid .row .d-flex img:hover{
+    transform: scale(1.1);
+}
