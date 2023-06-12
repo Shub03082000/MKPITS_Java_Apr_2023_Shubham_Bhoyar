@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    background-color: black;
+    /* color: black; */
+    width: 250px;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    list-style-type: none;
+}
+li a{
+    display: block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 30px;
+    /* float: left; */
+    border-radius: 10px;
+    color: white;
+}
+li a i{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+li a i:hover{
+    font-size: 40px;
+    color: red;
+}
