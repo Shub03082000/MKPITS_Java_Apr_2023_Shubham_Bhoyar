@@ -35,10 +35,10 @@ a:hover{
 }
 li img{
     width: 110px;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
     padding: 10px;
     margin-right: 700px;
     display: flex;
     align-items: center;
-    
-}
+} 
+

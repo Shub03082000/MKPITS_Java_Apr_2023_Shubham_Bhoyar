@@ -1,0 +1,13 @@
+body{
+    margin-top: 100px;
+}
+.card{
+    position: relative;
+    margin-top: 100px;
+}
+img{
+    position: absolute;
+    z-index: 1;
+    right:70px;
+    top: 200px;
+}

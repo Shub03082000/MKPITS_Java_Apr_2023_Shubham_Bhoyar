@@ -1,0 +1,36 @@
+.tableDropdown{
+    padding: 14px 30px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: firebrick;
+    color: white;
+    position: relative;
+    display: inline-block;
+}
+.tableDropdown .table1{
+    position: absolute;
+    display: none;
+}
+.tableDropdown:hover .table1{
+    display: block;
+    width: 500px;
+    height: 520px;
+    color: black;
+}
+.tableDropdown .table1 tr td:hover{
+    background-color: pink;
+}
+.tableDropdown .table1 tr th:hover{
+    background-color: skyblue;
+    color: brown;
+}
+.tableDropdown .table1:hover{
+    border: 5px solid green;
+    box-shadow: 10px 10px 10px black;
+}
+.tableDropdown .table1:hover{
+    position: absolute;
+    display: block;
+    width: 500px;
+    height: 520px;
+}
