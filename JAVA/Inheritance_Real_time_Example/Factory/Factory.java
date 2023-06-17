@@ -4,11 +4,11 @@ class Factory{
 	String Department;
 }
 class Automobile extends Factory{
-	List<Vehicles> vehicles;
+	List<Vehicle> vehicles;
 	String qualityOfMaterial;
 	String brand;
 }
-class vehicle extends Automobile{
+class Vehicle extends Automobile{
 	VehicleType vehicleType;
 	Double priceOfVehicle;
 	String color;

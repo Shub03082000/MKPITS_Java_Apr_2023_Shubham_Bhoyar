@@ -1,9 +1,9 @@
 class Gadget{
 	String brand;
 	String material;
-	Double length;
-	Double height;
-	Double width;
+	double length;
+	double height;
+	double width;
 }
 class laptop extends Gadget{
 	String color;
@@ -14,11 +14,11 @@ class mobile extends Gadget{
 	String screenSize;
 	List<Mobiles> mobiles;
 	String function;
-	Integer keys;
+	int keys;
 }
 class freeze extends Gadget{
-	Integer noOfDoors;
-	Integer noOfSection;
-	Double litre;
-	Double sizeOfCompressor;
+	int noOfDoors;
+	int noOfSection;
+	double litre;
+	double sizeOfCompressor;
 }
