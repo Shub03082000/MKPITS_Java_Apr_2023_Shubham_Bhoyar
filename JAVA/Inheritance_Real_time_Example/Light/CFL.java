@@ -1,5 +1,5 @@
 class CFL extends Light{
-	integer noOfTubes;
+	int noOfTubes;
 	String Shape;
 	String gas;
 }

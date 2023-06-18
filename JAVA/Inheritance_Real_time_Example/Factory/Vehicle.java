@@ -1,5 +1,5 @@
 class Vehicle extends Automobile{
-	VehicleType vehicleType;
+	//VehicleType vehicleType;
 	double priceOfVehicle;
 	String color;
 }

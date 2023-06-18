@@ -1,4 +1,4 @@
-class Car extends vehicle{
+class Car extends Vehicle{
 	double heightOfCar;
 	double widthOfCar;
 	double lengthOfCar;

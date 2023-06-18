@@ -1,5 +1,5 @@
 class Automobile extends Factory{
-	List<Vehicle> vehicles;
+	//List<Vehicle> vehicles;
 	String qualityOfMaterial;
 	String brand;
 }

@@ -1,5 +1,5 @@
 class Section{
-	string ticketCounter;
-	string platform;
-	string waitingRoom; //where passenger waits for train
+	String ticketCounter;
+	String platform;
+	String waitingRoom; //where passenger waits for train
 }

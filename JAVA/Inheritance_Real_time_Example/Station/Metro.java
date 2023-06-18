@@ -1,7 +1,7 @@
-class Metro extends station{
-	Double lengthOfPlatform;
-	Double widthOfPlatform;
-	Double lengthOfTrain;
-	integer noOfCoaches;
-	List <Departments> departments;
+class Metro extends Station{
+	double lengthOfPlatform;
+	double widthOfPlatform;
+	double lengthOfTrain;
+	int noOfCoaches;
+	//List <Departments> departments;
 }

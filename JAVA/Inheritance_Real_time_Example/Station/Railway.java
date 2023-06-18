@@ -1,6 +1,6 @@
-class Railway extends station{
+class Railway extends Station{
 	String nameOfTran;
-	Doouble trainLength;
-	Double platformLength;
-	Double platformWidth;
+	double trainLength;
+	double platformLength;
+	double platformWidth;
 }

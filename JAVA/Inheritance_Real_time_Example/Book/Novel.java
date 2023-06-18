@@ -1,6 +1,6 @@
-Class Novel extends Book{
-	NovelType noveltype;
+class Novel extends Book{
+	//NovelType noveltype;
 	String novelName;
-	Integer pages;
+	int pages;
 	String color;
 }

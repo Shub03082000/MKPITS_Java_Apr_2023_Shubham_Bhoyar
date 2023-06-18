@@ -1,5 +1,5 @@
 class LED extends Light{
-	integer size;
+	int size;
 	String color;
 	String shape;
 }
