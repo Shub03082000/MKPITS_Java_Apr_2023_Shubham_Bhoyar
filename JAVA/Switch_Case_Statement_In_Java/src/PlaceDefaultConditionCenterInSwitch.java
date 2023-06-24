@@ -1,6 +1,5 @@
 public class PlaceDefaultConditionCenterInSwitch {
-    public static  void main(String[] args){
-    int day = 7;
+    public String placeDefaultConditionCenterInSwitch(int day){
         switch (day) {
             case 1:
                 System.out.println("Monday");
@@ -27,5 +26,6 @@ public class PlaceDefaultConditionCenterInSwitch {
                 System.out.println("Sunday");
                 break;
         }
+        return null;
     }
 }

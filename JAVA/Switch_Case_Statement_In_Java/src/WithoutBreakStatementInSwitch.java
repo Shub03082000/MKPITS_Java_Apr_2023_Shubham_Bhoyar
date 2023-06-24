@@ -1,7 +1,5 @@
 public class WithoutBreakStatementInSwitch {
-    public static void main(String[] args){
-
-        int number = 5;
+    public void withoutBreakStatementInSwitch(int number){
         switch (number) {
             default:
                 System.out.println("Default");

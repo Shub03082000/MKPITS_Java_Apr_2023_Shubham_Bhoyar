@@ -1,9 +1,8 @@
-public class placeDefaultConditionOnTopInSwitch {
-    public static void main(String[] args){
-        int day = 4;
-        switch (day) {
-            default:
-                System.out.println("Invalid");
+import com.sun.security.jgss.GSSUtil;
+
+public class SwitchByte {
+    public void switchByte(byte day){
+        switch (day){
             case 1:
                 System.out.println("Monday");
                 break;
@@ -25,7 +24,8 @@ public class placeDefaultConditionOnTopInSwitch {
             case 7:
                 System.out.println("Sunday");
                 break;
-
+            default:
+                System.out.println("Invalid condition");
         }
     }
 }

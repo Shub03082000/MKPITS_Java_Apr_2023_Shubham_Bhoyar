@@ -1,6 +1,5 @@
 public class PlaceDefaultConditionAtEndInSwitch {
-    public static void main(String[] args){
-        int day = 8;
+    public String placeDefaultConditionAtEndInSwitch(int day) {
         switch (day) {
             case 1:
                 System.out.println("Monday");
@@ -26,5 +25,6 @@ public class PlaceDefaultConditionAtEndInSwitch {
             default:
                 System.out.println("Invalid");
         }
+        return null;
     }
 }
