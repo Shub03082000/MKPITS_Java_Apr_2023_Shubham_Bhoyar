@@ -1,14 +1,14 @@
-public class MergeReverseRightAngleStarPattern extends StarPattern{
+public class ReverseNumberPyramidPattern extends StarPattern {
     public int starPattern(int number){
-        //UPPER HALF
+        // upper half
         for(int row=1; row<=number; row++){
             //SPACES
-            for(int space=1; space<=number-row; space++){
+            for(int space=1; space<=row; space++){
                 System.out.print(" ");
             }
             //STARS
-            for(int column=1; column<=2*row-1; column++){
-                System.out.print("*");
+            for(int column=row; column<=number; column++){
+                System.out.print(column + " ");
             }
             System.out.println();
         }

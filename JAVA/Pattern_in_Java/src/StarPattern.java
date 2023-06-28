@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class StarPattern {
+public class StarPattern {
+    public int starPattern(int number){
+        return 0;
+    }
 }

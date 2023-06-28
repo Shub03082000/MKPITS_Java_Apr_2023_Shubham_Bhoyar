@@ -1,21 +1,21 @@
 import java.util.Scanner;
 
-public class StarPattern3 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter any number here : ");
-        int number = scanner.nextInt();
-        for(int row=number; row>=1; row--){
-
-            for(int column=number; column>row; column--){
+public class  ReverseStarPyramidPattern extends StarPattern{
+    public int starPattern(int number){
+        for (int row = 1; row <= number; row++) {
+            for (int space = 0; space<row; space++) {
                 System.out.print(" ");
             }
-
-            for(int k=1; k<(row*2); k++){
-                System.out.print("*");
+            for (int column = 0; column <=(number-row); column++) {
+//                if(%2==0){
+                    System.out.print("* ");
+//                }
+//                else{
+//                    System.out.print(" ");
+//                }
             }
-
             System.out.println();
         }
+        return 0;
     }
 }
