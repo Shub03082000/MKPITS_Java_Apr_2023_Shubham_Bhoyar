@@ -481,6 +481,8 @@ background: linear-gradient(135deg, #efc2bbe8, #9EDCE0);
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 30px;
+    background-color: #ff330f;
+    color: white;
 }
 .opportunities{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -496,4 +498,34 @@ background: linear-gradient(135deg, #efc2bbe8, #9EDCE0);
 .disclaimer{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     border-radius: 20px;
+}
+
+/* #milestone {
+    background: linear-gradient(rgba(250, 72, 84, 0.733), rgba(237, 84, 84, 0.779)), url(/Images/about2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+/* #milestone {
+    background: linear-gradient(rgba(121, 101, 97, 0.733), rgba(210, 187, 182, 0.779)), url(/Images/about2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+#milestone {
+    background: linear-gradient(rgba(17, 11, 10, 0.584), rgba(20, 12, 11, 0.639)), url(/Images/about2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card1, .card2{
+    /* box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px; */
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+    box-shadow: rgba(90, 36, 36, 0.687) 0px 2px 4px, rgba(110, 55, 55, 0.614) 0px 7px 13px -3px, rgba(107, 45, 45, 0.619) 0px -3px 0px inset;
+    border-radius: 20px;
+    padding: 10px;
+}
+.team-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
 }
