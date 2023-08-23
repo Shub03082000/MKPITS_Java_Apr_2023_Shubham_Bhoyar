@@ -1,6 +1,7 @@
 import LongestWordInFile.LongestWordFromFile;
 
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -42,6 +43,7 @@ public class Main {
 //        CountCharacterInTextFile.CountCharacter();
 
 //========================= Longest word in file =====================================================================//
-        LongestWordFromFile.longestWord();
+//        LongestWordFromFile.longestWord();
+        LongestWordFromFile.longestWordUsingScanner();
     }
 }

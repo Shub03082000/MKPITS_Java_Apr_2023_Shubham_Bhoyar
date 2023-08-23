@@ -1,24 +1,39 @@
 package LongestWordInFile;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.util.NoSuchElementException;
+import java.util.Scanner;
 
 public class LongestWordFromFile {
-    public static void longestWord() throws FileNotFoundException, IOException {
-        BufferedReader bufferedReader = new BufferedReader(new FileReader("xyz.txt"));
-        String string = bufferedReader.readLine();
+// ========================================== first way to display longest word in file =============================//
+//    public static void longestWord() throws FileNotFoundException, IOException {
+//        BufferedReader bufferedReader = new BufferedReader(new FileReader("xyz.txt"));
+//        String string = bufferedReader.readLine();
+//        String longestWord = "";
+//        while (string != null) {
+//            String[] array = string.split(" ");
+//            for(int number=0; number< array.length; number++){
+//                if(array[number].length() > longestWord.length()){
+//                    longestWord = array[number];
+//                }
+//            }
+//            string = bufferedReader.readLine();
+//        }
+//        System.out.println("Longest word in text file = " + longestWord);
+//    }
+
+
+//======================================== Second way to display longest word using Scanner class ================================//
+    public static void longestWordUsingScanner() throws FileNotFoundException {
+        Scanner scanner = new Scanner(new File("xyz.txt"));
+        String currentWord;
         String longestWord = "";
-        while (string != null) {
-            String[] array = string.split(" ");
-            for(int number=0; number< array.length; number++){
-                if(array[number].length() > longestWord.length()){
-                    longestWord = array[number];
-                }
+        while (scanner.hasNext()){  //check whether next word exist or not
+            currentWord = scanner.next();
+            if(currentWord.length() > longestWord.length()){
+                longestWord = currentWord;
             }
-            string = bufferedReader.readLine();
         }
-        System.out.println("Longest word in text file = " + longestWord);
+        System.out.println("Longest word in file = " + longestWord);
     }
 }
