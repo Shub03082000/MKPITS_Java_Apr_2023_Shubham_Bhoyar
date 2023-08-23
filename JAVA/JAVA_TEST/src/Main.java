@@ -1,21 +1,15 @@
-import AppendTextToFile.AppendTextToFile;
-import ReadfFirstThreeLineFromFile.ReadFirstThreeLine;
-import StoreTextLineByLineInArray.StoreTextLineByLineInArray;
-import WriteObjectToFile.FileReadWrite;
-import WriteObjectToFile.Student;
+import LongestWordInFile.LongestWordFromFile;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class Main {
     public static void main(String[] args) throws IOException {
 
 //============================================== By typecasting Student object =======================================//
-       Student student = new Student("Shubham",89);
+//       Student student = new Student("Shubham",89);
 
 //   ----------------- It read and store text in Object format ----------------//
-        FileReadWrite.writeObjectToFile(student);
+//        FileReadWrite.writeObjectToFile(student);
 
 //   -------------------- readObjectFromFile1 ----------------------------//
 //        FileReadWrite.readObjectFromFile1(student);
@@ -35,7 +29,19 @@ public class Main {
 //        StoreTextLineByLineInArray.storeTextLineByLine(bufferedReader.readLine());
 
 //=============================== Read first three Line in File ======================================================//
-        ReadFirstThreeLine.displayFirstThreeLine();
+//        ReadFirstThreeLine.displayFirstThreeLine();
 
+
+//============================ Count Number of lines in text file ===================================================//
+//        CountLineInTextFile.countLine();
+
+//=========================== Count Number of words in text file ====================================================//
+//        CountWordsInTextFile.countWords();
+
+//========================== Count Number of character in text file ==================================================//
+//        CountCharacterInTextFile.CountCharacter();
+
+//========================= Longest word in file =====================================================================//
+        LongestWordFromFile.longestWord();
     }
 }
