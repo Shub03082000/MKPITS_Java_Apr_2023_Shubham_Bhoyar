@@ -1,5 +1,4 @@
 package ReadCSVFile;
-
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -10,6 +9,7 @@ public class ReadCsvFile {
         try {
             BufferedReader bufferedReader = new BufferedReader(new FileReader("D:\\CSV_file\\color_srgb.csv"));
             String string = bufferedReader.readLine();
+
             while (string != null){
                 String[] color = string.split(",");
                 for(int counter = 0; counter < color.length; counter++){
@@ -23,6 +23,5 @@ public class ReadCsvFile {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
 }

@@ -1,7 +1,10 @@
+import CountNumberOfCharWordsLinesFromFile.CountWordsCharacterLines;
 import LongestWordInFile.LongestWordFromFile;
 import ReadCSVFile.ReadCsvFile;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class Main {
@@ -48,6 +51,12 @@ public class Main {
 //        LongestWordFromFile.longestWordUsingScanner();
 
 //========================================= Read CSV file ============================================================//
-        ReadCsvFile.displayReadCsvFile();
+//        ReadCsvFile.displayReadCsvFile();
+
+//================================ Count line, words and character from file ========================================//
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter file name : ");
+        String file = bufferedReader.readLine();
+        CountWordsCharacterLines.displayCountWordsCharacterLines(file);
     }
 }
