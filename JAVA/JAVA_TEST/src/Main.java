@@ -1,4 +1,5 @@
 import LongestWordInFile.LongestWordFromFile;
+import ReadCSVFile.ReadCsvFile;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -44,6 +45,9 @@ public class Main {
 
 //========================= Longest word in file =====================================================================//
 //        LongestWordFromFile.longestWord();
-        LongestWordFromFile.longestWordUsingScanner();
+//        LongestWordFromFile.longestWordUsingScanner();
+
+//========================================= Read CSV file ============================================================//
+        ReadCsvFile.displayReadCsvFile();
     }
 }
