@@ -78,9 +78,25 @@ public class UseOfArrayList {
         //Return Value: This method returns a list iterator over the elements in this list (in proper sequence),
         //starting at the specified position in the list.
         ListIterator<Integer> listIterator = list1.listIterator(2);
+        System.out.print("listIterator() method = ");
         while (listIterator.hasNext()){
-            System.out.println(listIterator.next());
+            System.out.print(listIterator.next() + " ");
         }
-        
+        System.out.println();
+
+//------------------------------------ asList() -------------------------------------------------------------//
+        //asList() -> it takes multiple values but return only fixed size of array
+        List newlist = Arrays.asList(12,433,545,123,343);//It creates a fixed size of list
+        System.out.println("asList() method = "+newlist);
+
+//------------------------------------ addAll() -------------------------------------------------------------//
+        List list2 = new ArrayList();
+        list2.add(120);
+        list2.add(76);
+        list2.add(34);
+        System.out.println("addAll() method = "+list.addAll(list2));
+
+//---------------------------------- trimToSize() ----------------------------------------------------------//
+
     }
 }
