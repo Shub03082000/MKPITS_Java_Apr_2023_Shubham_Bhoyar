@@ -7,16 +7,18 @@ import java.util.LinkedList;
 public class UseComparatorInterface {
     public static void main(String[] args){
         LinkedList linkedList = new LinkedList();
-        StudentClass[] studentClasses = new StudentClass[4];
+        StudentClass[] studentClasses = new StudentClass[5];
 
         studentClasses[0] = new StudentClass("Pranay",90);
         studentClasses[1] = new StudentClass("Shubham",85);
-        studentClasses[2] = new StudentClass("Abhi",95);
-        studentClasses[3] = new StudentClass("mohit",65);
+        studentClasses[2] = new StudentClass("Sonu",80);
+        studentClasses[3] = new StudentClass("Abhi",95);
+        studentClasses[4] = new StudentClass("Anushree",91);
 
         System.out.println("================================ Sort By Name =========================================");
         linkedList.addAll(Arrays.asList(studentClasses));
-        Collections.sort(linkedList, new SortByName());
+
+        Collections.sort(linkedList, new NameComparator());
         for(Object studentClass : linkedList){
             System.out.println(studentClass);
         }

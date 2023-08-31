@@ -1,6 +1,6 @@
 package UseOfComparatorInterface;
 
-public class StudentClass {
+public class StudentClass{
     private String name;
     private int marks;
 
