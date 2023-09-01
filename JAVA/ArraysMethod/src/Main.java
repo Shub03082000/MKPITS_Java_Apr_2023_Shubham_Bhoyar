@@ -1,4 +1,7 @@
+import java.awt.image.AreaAveragingScaleFilter;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -69,5 +72,9 @@ public class Main {
         int[] array3 = new int[10];
         Arrays.setAll(array3, (index) -> index*index);
         System.out.println("Generates square of index in an array using setAll(int[] arr, (index) -> index*index = "+Arrays.toString(array3));
+
+
+
+
     }
 }

@@ -7,6 +7,6 @@ class MulAssignOperator{
 	public static void main(String[] args){
 		MulAssignOperator1 mulAssignOperator1 = new MulAssignOperator1();
 		int mul = mulAssignOperator1.mulAssignOperator(20);
-		System.out.println("Substraction of a with number using Assignment operator is : "+ mul);
+		System.out.println("Operation of Multiplication Assignment operator is : "+ mul);
 	}
 }

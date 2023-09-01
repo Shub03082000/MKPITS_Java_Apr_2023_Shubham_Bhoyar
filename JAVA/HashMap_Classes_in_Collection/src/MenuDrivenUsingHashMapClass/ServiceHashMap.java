@@ -1,2 +1,8 @@
-package MenuDrivenUsingHashMapClass;public class ServiceHashMap {
+package MenuDrivenUsingHashMapClass;
+
+public class ServiceHashMap {
+
+    public void addKeysAndValues(){
+
+    }
 }

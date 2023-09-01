@@ -1,33 +1,37 @@
 import java.util.Scanner;
 
-public class HollowDiamondStarPattern {
-    public int hollowDiamondStarPattern(int row, int column){
-        Scanner scanner = new Scanner(System.in);
-        int[][] array = new int[row][column];
-        System.out.println("Enter row size : ");
-        row= scanner.nextInt();
-        System.out.println("Enter column size : ");
-        column= scanner.nextInt();
-        int middleValue = row/2;
+public class HollowDiamondStarPattern extends HollowPattern{
+    public void hollowPattern(int row) {
+        String[][] array = new String[row][row];
+        int middleValue = row / 2;
 
-        for(int rowCounter = 0; rowCounter<row; rowCounter++){
-            for(int columnCounter = 0; columnCounter < column; columnCounter++){
-                if(rowCounter <= middleValue){
-                    if(columnCounter == middleValue - rowCounter ||  columnCounter == middleValue + rowCounter){
-                        System.out.print("*");
-                    }else{
-                        System.out.print(" ");
+        for (int rowCounter = 0; rowCounter < row; rowCounter++) {
+            for (int columnCounter = 0; columnCounter < row; columnCounter++) {
+                if (rowCounter <= middleValue) {
+                    if (columnCounter == middleValue - rowCounter || columnCounter == middleValue + rowCounter) {
+//                        System.out.print("*");
+                        array[rowCounter][columnCounter] = "*";
+                    } else {
+//                        System.out.print(" ");
+                        array[rowCounter][columnCounter] = " ";
                     }
-                }else{
-                    if(columnCounter == middleValue - (row - 1 - rowCounter) || columnCounter == middleValue + (row - 1 - rowCounter)){
-                        System.out.print("*");
-                    }else{
-                        System.out.print(" ");
+                } else {
+                    if (columnCounter == middleValue - (row - 1 - rowCounter) || columnCounter == middleValue + (row - 1 - rowCounter)) {
+//                        System.out.print("*");
+                        array[rowCounter][columnCounter] = "*";
+                    } else {
+//                        System.out.print(" ");
+                        array[rowCounter][columnCounter] = " ";
                     }
                 }
             }
+        }
+        for (String[] hollowStar : array) {
+            for (String printStar : hollowStar) {
+                System.out.print(printStar);
+            }
             System.out.println();
         }
-        return 0;
+
     }
 }

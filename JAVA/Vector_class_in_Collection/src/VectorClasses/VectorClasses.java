@@ -181,5 +181,17 @@ public class VectorClasses {
         System.out.println("toString() --> Returns a string representation of this Vector, containing the String representation of each element");
         System.out.println(vector.toString());
 
+//--------------- getClass() --> Returns the runtime class of this Object -----------------------------------------------------------------------------------------//
+        System.out.println("getClass() --> Returns the runtime class of this Object");
+        System.out.println(vector.getClass());
+
+//--------------- copyInto(Object[] anArray) --> Copies the components of this vector into the specified array. -----------------------------------------------------------------------------------------//
+        Object[] objects = new Object[vector.size()];
+        vector.copyInto(objects);
+        System.out.println("copyInto(Object[] anArray) --> Copies the components of this vector into the specified array. ");
+        for(int index=0; index<objects.length; index++){
+            System.out.print(vector.get(index) + " ");
+        }
+
     }
 }

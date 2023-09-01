@@ -1,6 +1,6 @@
 class UnaryOperator1{
 	public int unaryOperator(int a){
-		return (a++) + (++a) - (--a) + (a--) + (a++); //10 + 12 - 11 + 11 + 10
+		return (a++) + (++a) - (--a) + (a--) + (a++); //10 + 12 - 11 + 11 + 10 => 32
 	}
 }
 class UnaryOperator{

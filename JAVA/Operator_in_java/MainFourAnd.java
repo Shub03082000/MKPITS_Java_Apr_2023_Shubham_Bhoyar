@@ -1,6 +1,6 @@
 class MainFourAnd{
 	public static void main(String[] args){
-	/*------------------------------logical operator using three parameter--------------------------------------------*/
+	/*------------------------------logical operator using Four parameter--------------------------------------------*/
 		logicalFourAnd logicalOperator1 = new logicalFourAnd();
 		System.out.println("Logical AND 4-parameters true && true && true && true" + " = " + logicalOperator1.logical4Operator(true,true,true,true));
 		System.out.println("Logical AND 4-parameters true && true && true && false " + " = " + logicalOperator1.logical4Operator(true,true,true,false));

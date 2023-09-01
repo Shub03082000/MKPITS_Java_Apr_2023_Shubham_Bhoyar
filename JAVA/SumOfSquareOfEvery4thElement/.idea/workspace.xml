@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="73ab5fc1-ad85-4afd-9266-5e1628cde260" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Assignment_abstract_class_interfaces/src/Car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HTML_CSS_JS/Hospital_Website/Hospital_html/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../HTML_CSS_JS/Hospital_Website/Hospital_html/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HTML_CSS_JS/Hospital_Website/Hospital_html/cardiology.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../HTML_CSS_JS/Hospital_Website/Hospital_html/cardiology.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HTML_CSS_JS/Hospital_Website/Hospital_html/hospital.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../HTML_CSS_JS/Hospital_Website/Hospital_html/hospital.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HTML_CSS_JS/Hospital_Website/Hospital_html/oncology.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../HTML_CSS_JS/Hospital_Website/Hospital_html/oncology.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HTML_CSS_JS/Hospital_Website/Hospital_html/orthopedic.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../HTML_CSS_JS/Hospital_Website/Hospital_html/orthopedic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HTML_CSS_JS/Hospital_Website/Hospital_html/radiology.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../HTML_CSS_JS/Hospital_Website/Hospital_html/radiology.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HTML_CSS_JS/Hospital_Website/Hospital_html/service.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../HTML_CSS_JS/Hospital_Website/Hospital_html/service.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HTML_CSS_JS/Hospital_Website/Hospital_html/urology.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../HTML_CSS_JS/Hospital_Website/Hospital_html/urology.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HTML_CSS_JS/Testimonial_Task/Task1/Task1.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../HTML_CSS_JS/Testimonial_Task/Task1/Task1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HTML_CSS_JS/Testimonial_Task/Task1/Task1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../HTML_CSS_JS/Testimonial_Task/Task1/Task1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HTML_CSS_JS/Testimonial_Task/Task1/img1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loops_in_Java/src/FiniteEvenNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Loops_in_Java/src/FiniteEvenNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loops_in_Java/src/FiniteOddNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Loops_in_Java/src/FiniteOddNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loops_in_Java/src/ForLoopNaturalNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Loops_in_Java/src/ForLoopNaturalNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loops_in_Java/src/PinNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Loops_in_Java/src/PinNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loops_in_Java/src/WhilePinNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Loops_in_Java/src/WhilePinNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operator/AddAssignOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Operator/AddAssignOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operator/MulArithOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Operator/MulArithOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operator/MulAssignOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Operator/MulAssignOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operator/SubAssignOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Operator/SubAssignOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operator/UnaryOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Operator/UnaryOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operator_in_java/MainDivision.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Operator_in_java/MainDivision.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operator_in_java/MainFiveOr.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Operator_in_java/MainFiveOr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operator_in_java/MainFourAnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Operator_in_java/MainFourAnd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operator_in_java/MainTwoAnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Operator_in_java/MainTwoAnd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operator_in_java/MainTwoNot.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Operator_in_java/MainTwoNot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operator_in_java/logicalTwoAnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Operator_in_java/logicalTwoAnd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/LeftHalfPyramid.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/LeftHalfPyramid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/MainPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/MainPattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/NumberDecreasingReversePyramidPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/NumberDecreasingReversePyramidPattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/NumberIncreasePyramidLowToHigh.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/NumberIncreasePyramidLowToHigh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/NumberIncreasingReversePyramid.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/NumberIncreasingReversePyramid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/NumberReversePyramid.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/NumberReversePyramid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/ReverseRightAngleStarPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/ReverseRightAngleStarPattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/RightAngleStarPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/RightAngleStarPattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/SquareStarPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/SquareStarPattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/TriangleIncreasingNumberPyramid.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/TriangleIncreasingNumberPyramid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/TriangleStarPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Pattern_in_Java/src/Different_Star_Numbers_patterns/TriangleStarPattern.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2S3cG3Gdco1a4lZxw0fL9dtLpdP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73ab5fc1-ad85-4afd-9266-5e1628cde260" name="Changes" comment="" />
+      <created>1688378607813</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688378607813</updated>
+      <workItem from="1688378608971" duration="129000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

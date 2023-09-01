@@ -1,12 +1,12 @@
-class MulAssignOperator1{
+class MulArithOperator1{
 	public int mulOperator(int a, int b){
 		return a * b;
 	}
 }
-class MulAssignOperator{
+class MulArithOperator{
 	public static void main(String[] args){
-		MulAssignOperator1 mulAssignOperator1 = new MulAssignOperator1();
-		int mul = mulAssignOperator1.mulOperator(18,3);
+		MulArithOperator1 mulArithOperator1 = new MulArithOperator1();
+		int mul = mulArithOperator1.mulOperator(18,3);
 		System.out.println("Multiplication of a and b is : " + mul);
 	}
 }

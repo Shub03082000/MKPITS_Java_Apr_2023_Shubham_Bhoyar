@@ -8,6 +8,5 @@ class MainTwoNot{
 		System.out.println("logical OR 2-parameter : !(true || false) " + " = " + logicalOperator1.logical2Operator(true,false));
 		System.out.println("logical OR 2-parameter : !(false || true) " + " = " + logicalOperator1.logical2Operator(false,true));
 		System.out.println("logical OR 2-parameter : !(false || false) " + " = " + logicalOperator1.logical2Operator(false,false));
-	
 	}
 }

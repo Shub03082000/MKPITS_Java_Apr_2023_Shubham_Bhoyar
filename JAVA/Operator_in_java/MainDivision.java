@@ -17,9 +17,9 @@ class DivisionArithmaticOperator{
 		return number1 / number2;
 	}
 	
-	public short divisionShort(short number1, short number2){
-		return number1 / number2;
-	}
+	//public short divisionShort(short number1, short number2){
+		//return number1 / number2;
+	//}
 }
 
 class MainDivision{

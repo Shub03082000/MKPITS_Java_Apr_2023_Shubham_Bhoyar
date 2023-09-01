@@ -7,6 +7,6 @@ class SubAssignOperator{
 	public static void main(String[] args){
 		SubAssignOperator1 subAssignOperator1 = new SubAssignOperator1();
 		int sub = subAssignOperator1.subAssignOperator(20);
-		System.out.println("Substraction of a with number using Assignment operator is : "+ sub);
+		System.out.println("Operation of Substration Assignment operator is : "+ sub);
 	}
 }

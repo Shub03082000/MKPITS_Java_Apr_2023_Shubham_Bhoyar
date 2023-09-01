@@ -56,7 +56,6 @@ public class StackClasses {
         System.out.println("clear() --> Removes all of the elements from this Vector");
         stack.clear();
         System.out.println(stack);
-        
 
     }
 }

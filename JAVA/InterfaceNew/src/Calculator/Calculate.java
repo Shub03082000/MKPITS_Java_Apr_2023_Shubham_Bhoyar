@@ -1,2 +1,5 @@
-package Calculator;public class Calculate {
+package Calculator;
+
+public interface Calculate {
+    int Calculator(int number1 , int number2);
 }

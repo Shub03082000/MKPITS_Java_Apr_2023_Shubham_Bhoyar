@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public class InvalidBalance {
+public class InvalidBalance extends Exception{
+    @Override
+    public String getMessage() {
+        return "Invalid balance";
+    }
 }

@@ -1,2 +1,5 @@
-package Shape;public interface Shape {
+package Shape;
+
+public interface Shape {
+    double calculateArea();
 }
