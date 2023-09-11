@@ -10,6 +10,6 @@ public class MainClass {
         System.out.println("Enter your choice(1 or 2) ");
         int choice = scanner.nextInt();
         ClassInterface classInterface = new ClassInterface(choice);
-        classInterface.display();   
+        classInterface.display();
     }
 }
