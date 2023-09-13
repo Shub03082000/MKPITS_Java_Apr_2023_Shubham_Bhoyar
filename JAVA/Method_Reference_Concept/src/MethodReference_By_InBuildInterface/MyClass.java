@@ -1,3 +1,5 @@
+package MethodReference_By_InBuildInterface;
+
 public class MyClass {
     public static void displayEvenNumber(){
         Runnable runnable = new Runnable(){
@@ -11,5 +13,6 @@ public class MyClass {
             }
         };
         runnable.run();
+        System.out.println();
     }
 }

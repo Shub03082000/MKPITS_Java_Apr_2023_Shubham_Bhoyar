@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public interface MyInterface {
+package MethodReference_By_UserDefinedInterface;
+
+public interface MyInterface {
+    void displayOddNumber();
 }
