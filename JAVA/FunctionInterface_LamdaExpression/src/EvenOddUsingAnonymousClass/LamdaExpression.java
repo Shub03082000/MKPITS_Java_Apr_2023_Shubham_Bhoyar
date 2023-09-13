@@ -1,4 +1,4 @@
-package LamdaExpressionUsingTwoAnonymousClass;
+package EvenOddUsingAnonymousClass;
 
 public class LamdaExpression {
     public static void main(String[] args) {
