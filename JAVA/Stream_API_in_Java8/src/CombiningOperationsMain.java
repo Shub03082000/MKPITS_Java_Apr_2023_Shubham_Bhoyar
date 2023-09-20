@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class CombiningOperationsMain {
-    public static void main(String[] args) {
+    public static void combineOperation() {
         List<Integer> numberList = Arrays.asList(12,13,21,7,8,9,11,6);
         System.out.println("-------- create a list of integers and use a stream to filter out teh even numbers, double each remaining number, and then find the sum of teh double numbers ----------------------");
         System.out.println("-------------------- Even number list --------------------");
