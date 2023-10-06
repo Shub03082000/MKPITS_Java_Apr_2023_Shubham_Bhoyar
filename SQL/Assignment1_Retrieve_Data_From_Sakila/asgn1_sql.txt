@@ -1,0 +1,54 @@
+
+Tables:
+
+a. Customers:
+CustomerID (Primary Key)
+FirstName
+LastName
+Email
+Phone
+Address
+
+b. Products:
+ProductID (Primary Key)
+ProductName
+Description
+Price
+Category
+c. Orders:
+
+OrderID (Primary Key)
+CustomerID (Foreign Key referencing Customers table)
+OrderDate
+TotalAmount
+
+d. OrderItems:
+OrderItemID (Primary Key)
+OrderID (Foreign Key referencing Orders table)
+ProductID (Foreign Key referencing Products table)
+Quantity
+Price
+
+Relationships:
+
+a. One-to-Many relationship between Customers and Orders:
+One customer can place many orders, but each order belongs to one customer.
+b. One-to-Many relationship between Orders and OrderItems:
+One order can have multiple order items.
+c. Many-to-One relationship between Products and OrderItems:
+Many order items can be associated with one product.
+
+Create above database structure, insert records in tables, practice update record, delete record, add fields, remove fields, truncate table, drop table etc.
+
+Write queries to retrive data from sakila database
+1. Retrieve all customer names and their email addresses
+2. Retrieve the number of distinct films in the inventory
+3. Retrieve the rental details for a specific rental ID
+4. Retrieve all film titles and their lengths (in minutes)
+5. Retrieve the staff details for a specific staff ID
+6. Retrieve the customers from a specific city
+7. Retrieve the most recent rentals
+8. Retrieve the distinct film categories available
+9. Retrieve the rental history for a specific customer
+
+

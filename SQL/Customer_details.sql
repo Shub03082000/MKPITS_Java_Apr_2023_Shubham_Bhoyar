@@ -46,4 +46,14 @@ INSERT INTO Orders VALUES('1','101','05/06/2023','50'),
                          
 INSERT INTO Orders VALUES('4','105','18/06/23',90);
                          
-	
+CREATE TABLE OrderItems(OrderItemID CHAR(10) PRIMARY KEY,
+					    OrderID CHAR(10),
+                        CONSTRAINT fk_order FOREIGN KEY(OrderID) REFERENCES Orders(OrderID),
+                        ProductID CHAR(10),
+                        CONSTRAINT fk_Product FOREIGN KEY(ProductID) REFERENCES Products(ProductID),
+                        Quantity VARCHAR(20),
+                        Price VARCHAR(20));
+                        
+SELECT * FROM OrderItems
+
+INSERT INTO OrderItems VALUES('')
