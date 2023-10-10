@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Number</title>
+</head>
+<body>
+    Enter number : <input type="text" id="t2" >
+    <button onclick="naturalNumber(parseInt(document.getElementById('t2').value))">Natural Number</button>
+
+    <script>
+        //sum of natural number 
+        function naturalNumber(number){
+            var sum = 0;
+            for(let counter=number; counter>0; counter--){
+                sum = sum + counter;
+            }
+            document.write(sum)
+        }
+    </script>
+</body>
+</html>
