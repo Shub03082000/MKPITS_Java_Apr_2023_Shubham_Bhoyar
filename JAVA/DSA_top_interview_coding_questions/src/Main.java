@@ -1,7 +1,4 @@
-import Arrays_Problems.FindLargestElement;
-import Arrays_Problems.SecondLargestElement;
-import Arrays_Problems.SecondSmallestElement;
-import Arrays_Problems.SecondSmallestLargestElement;
+import Arrays_Problems.*;
 
 import java.util.Scanner;
 
@@ -23,5 +20,10 @@ public class Main {
         SecondSmallestLargestElement secondSmallestLargestElement = new SecondSmallestLargestElement();
         System.out.println("================ Second largest and smallest element ===================");
         secondSmallestLargestElement.ssmallestlargest();
+
+
+//============== Left rotated array by one =======================================//
+        LeftRotateArrayByOne leftRotateArrayByOne = new LeftRotateArrayByOne();
+        leftRotateArrayByOne.leftRotate();
     }
 }
