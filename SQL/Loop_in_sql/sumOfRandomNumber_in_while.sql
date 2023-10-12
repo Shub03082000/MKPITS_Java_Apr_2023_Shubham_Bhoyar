@@ -9,7 +9,7 @@ while counter <= num do
 	set sum = sum + counter;
     set counter = counter + 1;
 end while;
-select sum;
+SELECT sum;
 END
 //
 DELIMITER ;

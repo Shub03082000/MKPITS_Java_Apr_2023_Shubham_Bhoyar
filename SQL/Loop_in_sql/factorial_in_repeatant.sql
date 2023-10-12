@@ -13,7 +13,7 @@ set fact = fact * counter;
 set counter = counter + 1;
 until counter >= num
 end repeat;
-select fact;
+select counter;
 END 
 //
 DELIMITER ;
