@@ -12,7 +12,7 @@ forloop : loop
     leave forloop;
     end if;
     end loop;
-    select sum;
+SELECT sum;
 END
 //
 DELIMITER ;
