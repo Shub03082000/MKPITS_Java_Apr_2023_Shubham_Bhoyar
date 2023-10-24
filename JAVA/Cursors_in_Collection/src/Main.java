@@ -9,7 +9,11 @@ public class Main {
 //        iteratorExample.useOfIterator();
 
         //------------- ListIterator concept -----------------------------
-        ExampleListIterator exampleListIterator = new ExampleListIterator();
-        exampleListIterator.useOfListIterator();
+//        ExampleListIterator exampleListIterator = new ExampleListIterator();
+//        exampleListIterator.useOfListIterator();
+
+        //------------- Classes implemented on Cursors --------------------
+        CursorsDemo cursorsDemo = new CursorsDemo();
+        cursorsDemo.implementedClassesOnCursor();
     }
 }
