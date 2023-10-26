@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Account opening page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2 align="center">User Account Opening Form</h2>
+        <form action="AccountOpen" method="post">
+            <table align="center" border="1" cellpadding="10" cellspacing="0" width="30%">
+                <tr>
+                    <td>
+                        <label for="user_id">User Id: </label>
+                    </td>
+                    <td>
+                        <input type="text" name="user_id"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password: </label>
+                    </td>
+                    <td>
+                        <input type="text" name="password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="name">Name: </label>
+                    </td>
+                    <td>
+                        <input type="text" name="name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Address: </label>
+                    </td>
+                    <td>
+                        <textarea rows="5" cols="20" name="address"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="city">City: </label>
+                    </td>
+                    <td>
+                        <input type="text" name="city"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="balance">Balance: </label>
+                    </td>
+                    <td>
+                        <input type="number" name="balance"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="Submit" value="Submit">
+                        <input type="Submit" value="Login">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
