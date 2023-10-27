@@ -9,10 +9,38 @@ and open the template in the editor.
         <title>Display Message</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container{
+                display: flex;
+                justify-content: center;
+            }
+            .container a{
+                font-size: 20px;
+                text-decoration: none;
+            }
+            .container .logout{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
     </head>
     <body>
         <form action="Myhtml" method="post">
             <h2 align="center" font-size="50px">Welcome login Successful</h2>
+            <div class="container">
+                <a href="DepositAmount.html">Deposit</a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="Withdraw.html">Withdraw</a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="BalanceStatement.html">Balance</a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="TransferMoney.html">Money Transfer</a>
+                &nbsp;&nbsp;&nbsp;
+                <div class="logout">
+                    <input type="submit" value="Logout">
+                </div>
+            </div>
         </form>
     </body>
 </html>
