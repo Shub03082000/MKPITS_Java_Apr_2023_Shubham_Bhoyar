@@ -1,21 +1,20 @@
-package Servlet;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package Servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -26,7 +25,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author shubh
  */
-public class login extends HttpServlet {
+public class DepositAmount extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -42,31 +41,42 @@ public class login extends HttpServlet {
             throws ServletException, IOException, ClassNotFoundException, SQLException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            String Username = request.getParameter("username");
-            String Password = request.getParameter("password");
-            
             /* TODO output your page here. You may use following sample code. */
+          
+            int Deposit = Integer.parseInt(request.getParameter("deposit"));
+            String transactionType = "Deposit";
+            HttpSession httpSession = request.getSession(true);
+            String UserName = httpSession.getAttribute("user_id").toString();
+            Date date = new java.sql.Date(httpSession.getCreationTime());
+            
             Class.forName("com.mysql.cj.jdbc.Driver");
 //            out.println("Driver loaded");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Bank_Account","root","shubham@123");
-//            out.println("driver established");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Bank_Account", "root", "shubham@123");
+//            out.println("connection established");
             
-            PreparedStatement preparedStatement = connection.prepareStatement("select * from User_Details where user_id=? and user_password=?");
-            preparedStatement.setString(1, Username);
-            preparedStatement.setString(2, Password);
+            PreparedStatement preparedStatement = connection.prepareStatement("insert into Transactions values(?,?,?,?)");
+            preparedStatement.setString(1, UserName);
+            preparedStatement.setDate(2, date);
+            preparedStatement.setInt(3, Deposit);
+            preparedStatement.setString(4, transactionType);
+            int resultSet = preparedStatement.executeUpdate();
             
-            ResultSet resultSet = preparedStatement.executeQuery();
-            if(resultSet.next()){
-                HttpSession htttpSession = request.getSession(true);
-                htttpSession.setAttribute("user_id",Username);
-                RequestDispatcher requestDispatcher = request.getRequestDispatcher("Myhtml.html");
-                requestDispatcher.forward(request, response);
-   
-                
+            if(resultSet!= 0){
+                out.println("<h2>Amount inserted successfully</h2>");
             }else{
-                out.println("Incorrect username and password");
-                out.println("<a href='Login.html'>Login Again</a>");
+                out.println("<h2>unable to insert amount</h2>");
             }
+            
+            PreparedStatement preparedUpdateStatement = connection.prepareStatement("update User_Details set Balance=Balance+? where user_id=?");
+            preparedUpdateStatement.setString(2, UserName);
+            preparedUpdateStatement.setInt(1, Deposit);
+            int updateResultSet = preparedUpdateStatement.executeUpdate();
+            if(updateResultSet != 0){
+                out.println("<h2>Balance updated</h2>");
+            }else{
+                out.println("<h2>Unable to update Balance</h2>");
+            }
+            
         }
     }
 
@@ -84,8 +94,10 @@ public class login extends HttpServlet {
             throws ServletException, IOException {
         try {
             processRequest(request, response);
-        } catch (ClassNotFoundException | SQLException ex) {
-            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(DepositAmount.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(DepositAmount.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -102,8 +114,10 @@ public class login extends HttpServlet {
             throws ServletException, IOException {
         try {
             processRequest(request, response);
-        } catch (ClassNotFoundException | SQLException ex) {
-            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(DepositAmount.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(DepositAmount.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
