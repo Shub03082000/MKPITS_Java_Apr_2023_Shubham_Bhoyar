@@ -48,9 +48,9 @@ public class AccountOpen extends HttpServlet {
             int Balance = Integer.parseInt(request.getParameter("balance"));
             
               Class.forName("com.mysql.cj.jdbc.Driver");
-              out.println("Driver loaded");
+//              out.println("Driver loaded");
               connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Bank_Account","root","shubham@123");
-              out.println("connection established");
+//              out.println("connection established");
          
             PreparedStatement preparedStatement = connection.prepareStatement("insert into User_Details values(?,?,?,?,?,?)");
             preparedStatement.setString(1,userid);
@@ -62,7 +62,7 @@ public class AccountOpen extends HttpServlet {
             
             int returnValue = preparedStatement.executeUpdate();
             if(returnValue!=0){
-                System.out.println("Record inserted");
+                System.out.println("<h2 align=center>Registration Successful</h2>");
             }else{
                 System.out.println("unable to insert record");
             }

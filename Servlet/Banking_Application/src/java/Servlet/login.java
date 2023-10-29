@@ -54,6 +54,7 @@ public class login extends HttpServlet {
             PreparedStatement preparedStatement = connection.prepareStatement("select * from User_Details where user_id=? and user_password=?");
             preparedStatement.setString(1, Username);
             preparedStatement.setString(2, Password);
+                
             
             ResultSet resultSet = preparedStatement.executeQuery();
             if(resultSet.next()){

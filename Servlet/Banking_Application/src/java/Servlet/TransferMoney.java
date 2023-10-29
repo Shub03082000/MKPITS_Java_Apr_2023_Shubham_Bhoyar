@@ -25,7 +25,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author shubh
  */
-public class DepositAmount extends HttpServlet {
+public class TransferMoney extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -38,45 +38,66 @@ public class DepositAmount extends HttpServlet {
      */
     static Connection connection;
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException, ClassNotFoundException, SQLException {
+            throws ServletException, IOException, SQLException, ClassNotFoundException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-          
-            int Deposit = Integer.parseInt(request.getParameter("deposit"));
-            String transactionType = "Deposit";
+            String Username = request.getParameter("username");
+            int Amount = Integer.parseInt(request.getParameter("amount"));
+            String transferIn = "TransferIn";
+            String transferOut = "TransferOut";
             HttpSession httpSession = request.getSession(true);
-            String UserName = httpSession.getAttribute("user_id").toString();
+            String userId = httpSession.getAttribute("user_id").toString();
             Date date = new java.sql.Date(httpSession.getCreationTime());
             
             Class.forName("com.mysql.cj.jdbc.Driver");
-//            out.println("Driver loaded");
+//            out.println("driver loaded");
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Bank_Account", "root", "shubham@123");
 //            out.println("connection established");
             
-            PreparedStatement preparedStatement = connection.prepareStatement("insert into Transactions values(?,?,?,?)");
-            preparedStatement.setString(1, UserName);
-            preparedStatement.setDate(2, date);
-            preparedStatement.setInt(3, Deposit);
-            preparedStatement.setString(4, transactionType);
-            int resultSet = preparedStatement.executeUpdate();
-            
-            if(resultSet!= 0){
-                out.println("<h1 align=center>Amount inserted successfully</h1>");
+            PreparedStatement prepareStatementDebit = connection.prepareStatement("insert into Transactions values(?,?,?,?)");
+            prepareStatementDebit.setString(1, Username);
+            prepareStatementDebit.setDate(2, date);
+            prepareStatementDebit.setInt(3, Amount);
+            prepareStatementDebit.setString(4, transferIn);
+            int resultSet = prepareStatementDebit.executeUpdate();
+            if(resultSet != 0){
+                out.println("<h2>Amount debited successfully</h2>");
             }else{
-                out.println("<h2 align=center>unable to insert amount</h2>");
+                out.println("Unable to debit amount");
             }
             
-            PreparedStatement preparedUpdateStatement = connection.prepareStatement("update User_Details set Balance=Balance+? where user_id=?");
-            preparedUpdateStatement.setString(2, UserName);
-            preparedUpdateStatement.setInt(1, Deposit);
-            int updateResultSet = preparedUpdateStatement.executeUpdate();
-            if(updateResultSet != 0){
-                out.println("<h1 align=center>Balance updated</h1>");
+            PreparedStatement prepareStatementCredit = connection.prepareStatement("insert into Transactions values(?,?,?,?)");
+            prepareStatementCredit.setString(1, userId);
+            prepareStatementCredit.setDate(2, date);
+            prepareStatementCredit.setInt(3, Amount);
+            prepareStatementCredit.setString(4, transferOut);
+            int resultSetcredit = prepareStatementCredit.executeUpdate();
+            if(resultSetcredit != 0){
+                out.println("<h2>Amount credited successfully</h2>");
             }else{
-                out.println("<h2 align=center>Unable to update Balance</h2>");
+                out.println("Unable to credit amount");
             }
             
+            PreparedStatement preparedUpdateBalanceOfloginUser = connection.prepareStatement("update User_Details set Balance=Balance-? where user_id=?");
+            preparedUpdateBalanceOfloginUser.setString(2, userId);
+            preparedUpdateBalanceOfloginUser.setInt(1, Amount);
+            int updateBalanceOfLoginUser = preparedUpdateBalanceOfloginUser.executeUpdate();
+            if(updateBalanceOfLoginUser != 0){
+                out.println("<h2>Balance updated of login user by credit amount</h2>");
+            }else{
+                out.println("<h2>Unable to update balance of login user account</h2>");
+            }
+            
+            PreparedStatement preparedUpdateBalance = connection.prepareStatement("update User_Details set Balance=Balance+? where user_id=?");
+            preparedUpdateBalance.setString(2, Username);
+            preparedUpdateBalance.setInt(1, Amount);
+            int updateBalance = preparedUpdateBalance.executeUpdate();
+            if(updateBalance != 0){
+                out.println("<h2>Balance updated of login user by credit amount</h2>");
+            }else{
+                out.println("<h2>Unable to update balance of login user account</h2>");
+            }
         }
     }
 
@@ -94,10 +115,8 @@ public class DepositAmount extends HttpServlet {
             throws ServletException, IOException {
         try {
             processRequest(request, response);
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(DepositAmount.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
-            Logger.getLogger(DepositAmount.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException | ClassNotFoundException ex) {
+            Logger.getLogger(TransferMoney.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -114,10 +133,8 @@ public class DepositAmount extends HttpServlet {
             throws ServletException, IOException {
         try {
             processRequest(request, response);
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(DepositAmount.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
-            Logger.getLogger(DepositAmount.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException | ClassNotFoundException ex) {
+            Logger.getLogger(TransferMoney.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
