@@ -1,5 +1,6 @@
 import HashSet_Example.HashSetDemo;
 import LinkedHashSet_Example.LinkedHashSetDemo;
+import TreeSet_Example.TreeSetDemo;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,5 +11,9 @@ public class Main {
         //---------------- LinkedHashSet Example -----------------------------//
         LinkedHashSetDemo linkedHashSetDemo = new LinkedHashSetDemo();
         linkedHashSetDemo.useOfLinkedHashSet();
+
+        //--------------- TreeSet Example ------------------------------------//
+        TreeSetDemo treeSetDemo = new TreeSetDemo();
+        treeSetDemo.useOfTreeSet();
     }
 }
