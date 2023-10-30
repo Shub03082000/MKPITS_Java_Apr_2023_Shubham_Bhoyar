@@ -47,6 +47,7 @@ public class BalanceStatementOfUser extends HttpServlet {
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Bank_Account", "root", "shubham@123");
 //            out.println("connection established");
             
+            out.println("<h1 align=center>Welcome</h1>");
             HttpSession httpSession = request.getSession(true);
             out.println("<h2 align=center>UserId : " +httpSession.getAttribute("user_id").toString()+"</h2>");
             
@@ -57,12 +58,15 @@ public class BalanceStatementOfUser extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Balance statement</title>");            
+            out.println("<title>Balance statement</title>"); 
+            out.println("<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css\" "
+                    + "rel=\"stylesheet\" integrity=\"sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN\" "
+                    + "crossorigin=\"anonymous\">");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h2 align=center>Welcome!</h2>");
-            out.println("<table border cellpadding=8 align=center>");
-            out.println("<tr>"
+            
+            out.println("<table class='container table-success table-bordered table-striped table table-lg table-hover'>");
+            out.println("<tr class='table table-group-divider'>"
                     + "<th>Transaction_Date</th>"
                     + "<th>Amount</th>"
                     + "<th>Transaction_Type</th>"
