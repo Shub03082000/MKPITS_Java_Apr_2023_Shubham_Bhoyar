@@ -11,6 +11,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -58,5 +60,30 @@ public class ServiceClass {
             System.out.println(ex);
         }
         return resultSet;
+    }
+    
+    public int depositAmount(BankApplication bankApplication){
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement("update User_Details set Balance = Balance + ? where user_id=?");
+            preparedStatement.setString(2, bankApplication.getUsername());
+            preparedStatement.setInt(1, bankApplication.getBalance());
+            result = preparedStatement.executeUpdate();
+        } catch (SQLException ex) {
+            System.out.println(ex);
+        }
+        return result;
+        
+    }
+    
+    public int withdrawAmount(BankApplication bankApplication){
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement("update User_Details set Balance = Balance - ? where user_id=?");
+            preparedStatement.setString(2, bankApplication.getUsername());
+            preparedStatement.setInt(1, bankApplication.getBalance());
+            result = preparedStatement.executeUpdate();
+        } catch (SQLException ex) {
+            System.out.println(ex);
+        }
+        return result;
     }
 }
