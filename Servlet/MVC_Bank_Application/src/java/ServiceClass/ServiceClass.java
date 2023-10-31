@@ -1,0 +1,62 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ServiceClass;
+
+import BankApplication.BankApplication;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+/**
+ *
+ * @author shubh
+ */
+public class ServiceClass {
+    static Connection connection;
+    int result = 0;
+    ResultSet resultSet;
+    
+    public ServiceClass(){
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Bank_Account", "root", "shubham@123");
+
+        } catch (ClassNotFoundException | SQLException ex) {
+            System.out.println(ex);
+        }
+    }
+    public int insertRecord(BankApplication bankApplication){
+        PreparedStatement preparedStatement;
+        try {
+            preparedStatement = connection.prepareCall("insert into User_Details values(?,?,?,?,?,?)");
+            preparedStatement.setString(1, bankApplication.getUsername());
+            preparedStatement.setString(2,bankApplication.getPassword());
+            preparedStatement.setString(3,bankApplication.getName());
+            preparedStatement.setString(4,bankApplication.getAddress());
+            preparedStatement.setString(5,bankApplication.getCity());
+            preparedStatement.setInt(6,bankApplication.getBalance());
+            result = preparedStatement.executeUpdate();
+        } 
+        catch (SQLException ex) {
+              System.out.println(ex);
+        }
+        return result;
+    }
+    
+    public ResultSet loginMethod(BankApplication bankApplication){
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement("select * from User_Details where user_id=? and user_password=?");
+            preparedStatement.setString(1, bankApplication.getUsername());
+            preparedStatement.setString(2, bankApplication.getPassword());
+             resultSet = preparedStatement.executeQuery();
+        } catch (SQLException ex) {
+            System.out.println(ex);
+        }
+        return resultSet;
+    }
+}
