@@ -6,12 +6,20 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<jsp:useBean id="transaction" class="com.example.banking_application_jsp.Transactions" scope="application"/>
 <jsp:useBean id="bank" class="com.example.banking_application_jsp.BankAccount_details" scope="application"/>
-<jsp:setProperty name="bank" property="userName" param="username"/>
-<jsp:setProperty name="bank" property="balance" param="amount" />
-<jsp:setProperty name="bank" property=""/>
+<jsp:setProperty name="bank" property="userName" param="username" />
+<jsp:setProperty name="transaction" property="transfer_id" value='<%=session.getAttribute("User_id")%>'/>
+<jsp:setProperty name="transaction" property="date" value="<%=new java.sql.Date(session.getCreationTime())%>"/>
+<jsp:setProperty name="transaction" property="balance" param="amount"/>
+
 <%
     ServiceClass serviceClass = new ServiceClass();
+    if(serviceClass.transferReduceAmount(transaction, bank.getUserName())!=0){
+        out.println("<h3 align=center>Transfer successfully</h3>");
+    }else{
+        out.println("<h3 align=center>failed to transfer</h3>");
+    }
 %>
 <html>
 <head>

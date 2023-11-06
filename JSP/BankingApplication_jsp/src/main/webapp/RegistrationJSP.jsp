@@ -11,9 +11,9 @@
 <%
     ServiceClass serviceClass = new ServiceClass();
     if(serviceClass.insertRecord(bank)!=0){
-        out.println("insert data");
+        out.println("<h3 align=center>Data inserted</h3>");
     }else{
-        out.println("Unable to insert record");
+        out.println("<h3>Unable to insert record</h3>");
     }
 %>
 

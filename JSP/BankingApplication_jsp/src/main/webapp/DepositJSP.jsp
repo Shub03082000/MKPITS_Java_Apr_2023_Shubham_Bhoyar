@@ -1,14 +1,13 @@
 <%@ page import="BankingServices.ServiceClass" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" import="java.sql.*" %>
-<jsp:useBean id="transaction" class="com.example.banking_application_jsp.Transactions" scope="application" />
-<jsp:setProperty name="transaction" property="userName" value='<%=session.getAttribute("User_id")%>' />
-
-<jsp:setProperty name="transaction" property="date" value="<%=new java.sql.Date(session.getCreationTime())%>" />
-<jsp:setProperty name="transaction" property="balance" param="amount"/>
-<jsp:setProperty name="transaction" property="transactionType1" value="Deposit" />
+<jsp:useBean id="bank" class="com.example.banking_application_jsp.BankAccount_details" scope="application" />
+<jsp:setProperty name="bank" property="userName" value='<%=session.getAttribute("User_id")%>' />
+<%--<jsp:setProperty name="transaction" property="date" value="<%=new java.sql.Date(session.getCreationTime())%>" />--%>
+<jsp:setProperty name="bank" property="balance" param="amount"/>
+<%--<jsp:setProperty name="transaction" property="transactionType1" value="Deposit"/>--%>
 <%
     ServiceClass serviceClass = new ServiceClass();
-    if(serviceClass.depositAmount(transaction)!=0){
+    if(serviceClass.depositAmount(bank)!=0){
         out.println("<h3 align=center>Amount deposit successfully</h3>");
     }else{
         out.println("<h3 align=center>Unable to deposit amount</h3>");

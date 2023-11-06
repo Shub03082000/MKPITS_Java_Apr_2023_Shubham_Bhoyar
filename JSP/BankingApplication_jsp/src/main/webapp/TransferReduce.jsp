@@ -29,7 +29,7 @@
 <body>
 <div class="container col-lg-4 mt-2 p-4 main">
   <h4 align="center" class="mt-3 mb-3">Money Transfer</h4>
-  <form action="TransferJSP.jsp" method="post">
+  <form action="TransferReduceJSP.jsp" method="post">
     <label>Username : </label>
     <input type="text" name="username" class="form-control">
     <br>

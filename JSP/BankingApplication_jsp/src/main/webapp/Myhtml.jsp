@@ -49,10 +49,10 @@
         <a href="Withdraw.jsp">
             <label>Withdraw</label>
         </a>
-        <a href="Transfer.jsp">
+        <a href="TransferReduce.jsp">
             <label>Transfer</label>
         </a>
-        <a href="BalanceStatement.jsp">
+        <a href="DisplayRecordJSP.jsp">
             <label>Balance</label>
         </a>
     </form>
