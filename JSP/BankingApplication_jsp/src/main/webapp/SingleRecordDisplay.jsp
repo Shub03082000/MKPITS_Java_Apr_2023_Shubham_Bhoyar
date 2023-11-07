@@ -31,7 +31,7 @@
     ResultSet resultSet = serviceClass.displayIndividualRecord(userId);
     ResultSetMetaData resultSetMetaData = resultSet.getMetaData();
 %>
-<table align="center"  cellpadding="6" class="col-lg-6 mt-3 table table-warning table-hover table-bordered">
+<table align="center"  cellpadding="6" class="col-lg-6 mt-3 table table-primary table-hover table-bordered">
 
     <%
         while (resultSet.next())
@@ -81,8 +81,8 @@
     %>
     <tr class="table borderless">
         <td colspan="2" align="center">
-            <input type="submit" value="Approve" class="btn-success fs-1">
-            <input type="submit" value="Reject" class="btn-danger fs-1">
+            <a href="ApprovedJSP.jsp?user_id=<%=userId%>"><button class="btn-success fs-1 text-decoration-none">Approve</button></a>
+            <a href="AdminJSP.jsp"><button class="btn-danger fs-1 text-decoration-none">Reject</button></a>
         </td>
     </tr>
     <%

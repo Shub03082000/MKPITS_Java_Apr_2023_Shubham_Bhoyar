@@ -41,7 +41,7 @@
     </style>
 </head>
 <body>
-<table align="center"  cellpadding="6" class="col-lg-6 mt-3 table table-warning table-hover table-bordered">
+<table align="center"  cellpadding="6" class="col-lg-6 mt-3 table table-primary table-hover table-bordered">
 <tr>
         <%
             for(int columnIndex=1; columnIndex<=resultSetMetaData.getColumnCount(); columnIndex++) {

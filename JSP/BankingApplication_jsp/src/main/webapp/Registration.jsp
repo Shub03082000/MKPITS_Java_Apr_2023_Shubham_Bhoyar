@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" >
     <style>
         body{
-            background-color: lightyellow;
+            background: linear-gradient(90deg, rgba(218,221,137,0.7764355742296919) 0%, rgb(176, 196, 222) 50%);
             margin-top: 10px;
         }
         .main{
             box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-            background-color: darkseagreen;
+            background-color: lightsteelblue;
         }
         div a{
             color: darkred;

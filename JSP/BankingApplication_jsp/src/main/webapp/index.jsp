@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" >
     <style>
         body{
-            background-color: lightyellow;
+            background: linear-gradient(90deg, rgb(143, 188, 143) 0%, rgba(176, 185, 133, 0.57) 50%);
             margin-top: 100px;
         }
         .main{
@@ -20,7 +20,7 @@
 
 </head>
     <div class="container col-lg-4 p-5 text-dark main">
-        <h2 class="text-center" class="mb-3 mt-3">Login Page</h2>
+        <h2 class="text-center" class="mb-5 mt-3">Login Page</h2>
     <form action="LoginJSP.jsp" method="post">
         <label>Username : </label>
         <input type="text" name="username" class="form-control">
