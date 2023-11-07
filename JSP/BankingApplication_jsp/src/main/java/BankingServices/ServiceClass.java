@@ -165,7 +165,7 @@ public class ServiceClass {
     public ResultSet displayRecord(BankAccount_details bankAccountDetails){
         ResultSet resultSet = null;
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement("select User_id,Created_on,is_Approved from Bank_account");
+            PreparedStatement preparedStatement = connection.prepareStatement("select User_id,Created_on,is_Approved from Bank_account where is_Approved='false'");
             resultSet= preparedStatement.executeQuery();
 
         }catch (Exception ex){
@@ -186,13 +186,17 @@ public class ServiceClass {
         return resultSet;
     }
 
-    public void approvedRegistration(BankAccount_details bankAccountDetails){
+    public int approvedRegistration(BankAccount_details bankAccountDetails, String userID){
         try {
             PreparedStatement preparedStatement = connection.prepareStatement("update Bank_account set Approved_at=?, Approved_by=?, is_Approved='true' where User_id=?");
-
+            preparedStatement.setString(3,userID);
+            preparedStatement.setTimestamp(1,bankAccountDetails.getApproved_at());
+            preparedStatement.setString(2,bankAccountDetails.getApproved_by());
+            result = preparedStatement.executeUpdate();
         }catch (Exception ex){
             System.out.println(ex);
         }
+        return result;
     }
 
 }
