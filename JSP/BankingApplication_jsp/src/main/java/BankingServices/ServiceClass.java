@@ -1,5 +1,6 @@
 package BankingServices;
 
+import com.example.banking_application_jsp.Admin;
 import com.example.banking_application_jsp.BankAccount_details;
 import com.example.banking_application_jsp.Transactions;
 
@@ -22,13 +23,15 @@ public class ServiceClass {
     public int insertRecord(BankAccount_details bankAccountDetails) {
         PreparedStatement preparedStatement;
         try {
-            preparedStatement = connection.prepareStatement("insert into Bank_account(User_id,User_password,name,address,city,balance) values(?,?,?,?,?,?)");
+            preparedStatement = connection.prepareStatement("insert into Bank_account(User_id,User_password,name,address,city,balance,Created_on) values(?,?,?,?,?,?,?)");
         preparedStatement.setString(1,bankAccountDetails.getUserName());
         preparedStatement.setString(2,bankAccountDetails.getPassword());
         preparedStatement.setString(3,bankAccountDetails.getName());
         preparedStatement.setString(4,bankAccountDetails.getAddress());
         preparedStatement.setString(5,bankAccountDetails.getCity());
         preparedStatement.setInt(6,bankAccountDetails.getBalance());
+        preparedStatement.setTimestamp(7,bankAccountDetails.getCreatedOn());
+
         result = preparedStatement.executeUpdate();
 
         } catch (Exception e) {
@@ -144,6 +147,52 @@ public class ServiceClass {
             System.out.println(e);
         }
         return resultSet;
+    }
+
+    public ResultSet adminLogin(Admin admin){
+        ResultSet resultSet = null;
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement("select * from AdminTable where UserId=? and admin_password=?");
+            preparedStatement.setString(1,admin.getAdminUsername());
+            preparedStatement.setString(2,admin.getAdminPassword());
+            resultSet = preparedStatement.executeQuery();
+        }catch (Exception ex){
+            System.out.println(ex);
+        }
+        return resultSet;
+    }
+
+    public ResultSet displayRecord(BankAccount_details bankAccountDetails){
+        ResultSet resultSet = null;
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement("select User_id,Created_on,is_Approved from Bank_account");
+            resultSet= preparedStatement.executeQuery();
+
+        }catch (Exception ex){
+            System.out.println(ex);
+        }
+        return resultSet;
+    }
+
+    public ResultSet displayIndividualRecord(String userId){
+        ResultSet resultSet=null;
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement("select * from Bank_account where User_id=?");
+            preparedStatement.setString(1,userId);
+            resultSet = preparedStatement.executeQuery();
+        }catch (Exception ex){
+            System.out.println(ex);
+        }
+        return resultSet;
+    }
+
+    public void approvedRegistration(BankAccount_details bankAccountDetails){
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement("update Bank_account set Approved_at=?, Approved_by=?, is_Approved='true' where User_id=?");
+
+        }catch (Exception ex){
+            System.out.println(ex);
+        }
     }
 
 }

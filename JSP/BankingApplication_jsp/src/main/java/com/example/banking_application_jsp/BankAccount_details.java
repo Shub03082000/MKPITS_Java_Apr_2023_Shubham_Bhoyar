@@ -1,6 +1,6 @@
 package com.example.banking_application_jsp;
-import java.util.*;
-
+import java.sql.Timestamp;
+import java.util.Date;
 public class BankAccount_details {
     private String userName;
     private String password;
@@ -8,8 +8,36 @@ public class BankAccount_details {
     private String address;
     private String city;
     private int balance;
+    private Timestamp createdOn;
+    private Timestamp Approved_at;
+    private String Approved_by;
+
 
     public BankAccount_details() {
+    }
+
+    public Timestamp getApproved_at() {
+        return Approved_at;
+    }
+
+    public void setApproved_at(Timestamp approved_at) {
+        Approved_at = approved_at;
+    }
+
+    public String getApproved_by() {
+        return Approved_by;
+    }
+
+    public void setApproved_by(String approved_by) {
+        Approved_by = approved_by;
+    }
+
+    public Timestamp getCreatedOn() {
+        return createdOn;
+    }
+
+    public void setCreatedOn(Timestamp createdOn) {
+        this.createdOn = createdOn;
     }
 
     public String getUserName() {
