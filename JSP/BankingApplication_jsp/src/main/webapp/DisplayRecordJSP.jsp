@@ -30,9 +30,9 @@
     </style>
 </head>
 <body>
-    <h3 class="text-center">Balance Statement</h3>
-    <h3 class="text-center">Username : <%=session.getAttribute("User_id")%></h3>
-    <table align="center"  cellpadding="8" class="col-lg-6 table table-info table-hover table-borderless">
+    <h4 class="text-center mt-3">Balance Statement</h4>
+    <h4 class="text-center mb-3">Username : <%=session.getAttribute("User_id")%></h4>
+    <table align="center"  cellpadding="6" class="col-lg-6 table table-danger table-hover table-bordered">
         <tr>
             <%
                 for(int columnIndex=1; columnIndex<=resultSetMetaData.getColumnCount(); columnIndex++) {
