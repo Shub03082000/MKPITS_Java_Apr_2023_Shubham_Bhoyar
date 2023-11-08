@@ -49,7 +49,7 @@
         <a href="Withdraw.jsp">
             <label>Withdraw</label>
         </a>
-        <a href="TransferReduce.jsp">
+        <a href="Transfer.jsp">
             <label>Transfer</label>
         </a>
         <a href="DisplayRecordJSP.jsp">

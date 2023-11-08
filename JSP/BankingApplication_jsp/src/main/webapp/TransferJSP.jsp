@@ -12,11 +12,21 @@
 <jsp:setProperty name="transaction" property="transfer_id" value='<%=session.getAttribute("User_id")%>'/>
 <jsp:setProperty name="transaction" property="date" value="<%=new java.sql.Date(session.getCreationTime())%>"/>
 <jsp:setProperty name="transaction" property="balance" param="amount"/>
+<jsp:setProperty name="bank" property="createdOn" value='<%=new java.sql.Timestamp(session.getCreationTime())%>'/>
+
+<jsp:useBean id="log" class="com.example.banking_application_jsp.LogDetails" scope="application"/>
+<%
+    session.setAttribute("log_date",bank.getCreatedOn());
+%>
+<jsp:setProperty name="log" property="logTime" value='<%=session.getAttribute("log_date")%>'/>
+<jsp:setProperty name="log" property="userId" value='<%=session.getAttribute("User_id")%>'/>
+<jsp:setProperty name="log" property="task" value="transfer"/>
 
 <%
     ServiceClass serviceClass = new ServiceClass();
     if(serviceClass.transferReduceAmount(transaction, bank.getUserName())!=0){
         out.println("<h3 align=center>Transfer successfully</h3>");
+        serviceClass.displayLogDetails(log);
     }else{
         out.println("<h3 align=center>failed to transfer</h3>");
     }
