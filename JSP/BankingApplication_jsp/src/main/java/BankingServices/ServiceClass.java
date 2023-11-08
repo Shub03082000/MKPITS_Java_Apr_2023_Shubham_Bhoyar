@@ -2,6 +2,7 @@ package BankingServices;
 
 import com.example.banking_application_jsp.Admin;
 import com.example.banking_application_jsp.BankAccount_details;
+import com.example.banking_application_jsp.LogDetails;
 import com.example.banking_application_jsp.Transactions;
 
 import java.sql.*;
@@ -55,15 +56,8 @@ public class ServiceClass {
         return resultSet;
     }
 
-    public int depositAmount(BankAccount_details bankAccountDetails){
+    public int depositAmount(BankAccount_details bankAccountDetails, Transactions transactions){
         try {
-//            PreparedStatement preparedInsertStatement = connection.prepareStatement("insert into Transaction_details values(?,?,?,?)");
-//            preparedInsertStatement.setString(1,transactions.getUserName());
-//            preparedInsertStatement.setDate(2, transactions.getDate());
-//            preparedInsertStatement.setInt(3,transactions.getBalance());
-//            preparedInsertStatement.setString(4,transactions.getTransactionType1());
-//            result = preparedInsertStatement.executeUpdate();
-
             PreparedStatement preparedStatement = connection.prepareStatement("update Bank_account set Balance=Balance+? where User_id=?");
             preparedStatement.setInt(1,bankAccountDetails.getBalance());
             preparedStatement.setString(2, bankAccountDetails.getUserName());
@@ -73,10 +67,22 @@ public class ServiceClass {
         }catch (Exception e){
             System.out.println(e);
         }
+        if(result!=0){
+            try {
+                PreparedStatement preparedStatement1 = connection.prepareStatement("insert into Transaction_details values(?,?,?,?)");
+                preparedStatement1.setString(1, transactions.getUserId());
+                preparedStatement1.setDate(2, transactions.getDate());
+                preparedStatement1.setInt(3, transactions.getBalance());
+                preparedStatement1.setString(4, transactions.getTransactionType());
+                result = preparedStatement1.executeUpdate();
+            }catch (Exception e){
+                System.out.println(e);
+            }
+        }
         return result;
     }
 
-    public int withdrawAmount(BankAccount_details bankAccountDetails){
+    public int withdrawAmount(BankAccount_details bankAccountDetails,Transactions transactions){
         try{
             PreparedStatement preparedStatement = connection.prepareStatement("update Bank_account set Balance = Balance - ? where User_id=?");
             preparedStatement.setInt(1,bankAccountDetails.getBalance());
@@ -84,6 +90,18 @@ public class ServiceClass {
             result = preparedStatement.executeUpdate();
         }catch (Exception e){
             System.out.println(e);
+        }
+        if(result!=0){
+            try{
+                PreparedStatement preparedStatement = connection.prepareStatement("insert into Transaction_details values(?,?,?,?)");
+                preparedStatement.setString(1,transactions.getUserId());
+                preparedStatement.setDate(2,transactions.getDate());
+                preparedStatement.setInt(3,transactions.getBalance());
+                preparedStatement.setString(4,transactions.getTransactionType());
+                result = preparedStatement.executeUpdate();
+            }catch (Exception e){
+                System.out.println(e);
+            }
         }
         return result;
     }
@@ -114,7 +132,7 @@ public class ServiceClass {
         if(result!=0){
             try{
                 PreparedStatement preparedStatement = connection.prepareStatement("insert into Transaction_details values(?,?,?,?)");
-                preparedStatement.setString(1,transactions1.getUserId());
+                preparedStatement.setString(1,user_id);
                 preparedStatement.setDate(2,transactions1.getDate());
                 preparedStatement.setInt(3,transactions1.getBalance());
                 preparedStatement.setString(4,"In");
@@ -192,6 +210,19 @@ public class ServiceClass {
             preparedStatement.setString(3,userID);
             preparedStatement.setTimestamp(1,bankAccountDetails.getApproved_at());
             preparedStatement.setString(2,bankAccountDetails.getApproved_by());
+            result = preparedStatement.executeUpdate();
+        }catch (Exception ex){
+            System.out.println(ex);
+        }
+        return result;
+    }
+
+    public int displayLogDetails(LogDetails logDetails){
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement("insert into log values(?,?,?)");
+            preparedStatement.setTimestamp(1,logDetails.getLogTime());
+            preparedStatement.setString(2, logDetails.getTask());
+            preparedStatement.setString(3, logDetails.getUserId());
             result = preparedStatement.executeUpdate();
         }catch (Exception ex){
             System.out.println(ex);
