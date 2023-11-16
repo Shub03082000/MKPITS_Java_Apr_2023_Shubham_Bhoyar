@@ -24,4 +24,19 @@ and open the template in the editor.
             <ref bean="add"></ref>
         </constructor-arg>
     </bean>
+    
+ <!-->display question answer details without creating passing object<!-->
+    <bean id="ques" class="question.Question">
+        <constructor-arg value="1001"></constructor-arg>
+        <constructor-arg value="what is java"></constructor-arg>
+        <constructor-arg>
+            <list>
+                <value>java is programming language</value>
+                <value>java is platform independent</value>
+                <value>java is robust</value>
+                <value>java contains oops features</value>
+            </list>
+        </constructor-arg>
+    </bean>
+    
 </beans>

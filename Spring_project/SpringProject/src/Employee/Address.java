@@ -15,7 +15,6 @@ public class Address {
     private String country;
     
     public Address(String city, String state, String country){
-        super();
         this.city=city;
         this.state=state;
         this.country=country;
@@ -25,6 +24,4 @@ public class Address {
     public String toString() {
         return "Address{" + "city=" + city + ", state=" + state + ", country=" + country + '}';
     }
-    
-    
 }
