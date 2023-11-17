@@ -14,6 +14,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import question.Answer;
 import question.Question;
+import question.Question1;
 
 /**
  *
@@ -40,9 +41,14 @@ public class SpringProject {
 //        Question question = (Question)context.getBean("ques");
 //        question.displayInfo();
         
-//------------------
+//------------------ constructor injection with list collection -------------------------------------
         ApplicationContext context1 = new ClassPathXmlApplicationContext("applicationContext1.xml");
         Question question1 = (Question)context1.getBean("que");
         question1.displayInfo();
+        
+//----------------- constructor injection with map collection ---------------------------------------
+        ApplicationContext context2 = new ClassPathXmlApplicationContext("applicationContext2.xml");
+        Question1 question = (Question1)context2.getBean("ques1");
+        question.displayInfo();
     }   
 }
