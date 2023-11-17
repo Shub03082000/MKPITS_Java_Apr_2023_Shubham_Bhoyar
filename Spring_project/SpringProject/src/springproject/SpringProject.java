@@ -15,6 +15,7 @@ import org.springframework.core.io.Resource;
 import question.Answer;
 import question.Question;
 import question.Question1;
+import question.QuestionCustomized;
 
 /**
  *
@@ -42,13 +43,18 @@ public class SpringProject {
 //        question.displayInfo();
         
 //------------------ constructor injection with list collection -------------------------------------
-        ApplicationContext context1 = new ClassPathXmlApplicationContext("applicationContext1.xml");
-        Question question1 = (Question)context1.getBean("que");
-        question1.displayInfo();
+//        ApplicationContext context1 = new ClassPathXmlApplicationContext("applicationContext1.xml");
+//        Question question1 = (Question)context1.getBean("que");
+//        question1.displayInfo();
         
 //----------------- constructor injection with map collection ---------------------------------------
-        ApplicationContext context2 = new ClassPathXmlApplicationContext("applicationContext2.xml");
-        Question1 question = (Question1)context2.getBean("ques1");
-        question.displayInfo();
+//        ApplicationContext context2 = new ClassPathXmlApplicationContext("applicationContext2.xml");
+//        Question1 question = (Question1)context2.getBean("ques1");
+//        question.displayInfo();
+
+//---------------- constructor injection with non-string map -----------------------------------------
+        ApplicationContext context3 = new ClassPathXmlApplicationContext("applicationContext3.xml");
+        QuestionCustomized questionCustomized = (QuestionCustomized)context3.getBean("q");
+        questionCustomized.displayInfo();
     }   
 }
