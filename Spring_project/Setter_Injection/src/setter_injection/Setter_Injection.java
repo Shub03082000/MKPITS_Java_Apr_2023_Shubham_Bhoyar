@@ -9,7 +9,9 @@ import employee.Employee;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import question.Question;
+import question.QuestionMap;
 import question.QuestionNonString;
+import question.QuestionNonStringMap;
 
 /**
  *
@@ -37,10 +39,20 @@ public class Setter_Injection {
         QuestionNonString questionNonString = (QuestionNonString)context2.getBean("quesnonString");
         questionNonString.displayNonStringCollection();
         
-        System.out.println("------------ Autowire attribute which automatically inject object into constructor ------");
+        System.out.println("------------ Autowire attribute which automatically inject object into constructor -------------");
         ApplicationContext contextAutowire = new ClassPathXmlApplicationContext("applicationContextAutowire.xml");
         Employee employeeAutowire = (Employee)contextAutowire.getBean("employee");
         employeeAutowire.display();
+        
+        System.out.println("----------- Setter injection with map example -----------------");
+        ApplicationContext contextMap = new ClassPathXmlApplicationContext("applicationContextMap.xml");
+        QuestionMap questionMap = (QuestionMap)contextMap.getBean("quesMap");
+        questionMap.show();
+        
+        System.out.println("--------------- Setter Injection with Non-String Map (having dependent Object) Example -------------");
+        ApplicationContext contextNonStringMap = new ClassPathXmlApplicationContext("applicationContextNonStringMap.xml");
+        QuestionNonStringMap questionNonStringMap = (QuestionNonStringMap)contextNonStringMap.getBean("quesNonStringMap");
+        questionNonStringMap.displayNonStringMap();
     }
     
 }
