@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+    <bean id="answer1" class="answer.Answer">
+        <property name="id" value="1"></property>
+        <property name="answer" value="java is programming langauge"></property>
+        <property name="postedby" value="teju"></property>
+    </bean>
+    
+    <bean id="answer2" class="answer.Answer">
+        <property name="id" value="2"></property>
+        <property name="answer" value="java is robust"></property>
+        <property name="postedby" value="abhishek"></property>
+    </bean>
+    
+    <bean id="quesnonString" class="question.QuestionNonString">
+        <property name="id" value="10"></property>
+        <property name="question" value="what is java"></property>
+        <property name="answers">
+            <list>
+                <ref bean="answer1"></ref>
+                <ref bean="answer2"></ref>
+            </list>
+        </property>
+    </bean>
+
+</beans>

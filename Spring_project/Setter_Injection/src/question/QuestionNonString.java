@@ -4,17 +4,18 @@
  * and open the template in the editor.
  */
 package question;
+
 import answer.Answer;
-import java.util.*;
+import java.util.List;
+
 /**
  *
  * @author shubh
  */
-public class Question {
+public class QuestionNonString {
     private int id;
     private String question;
-    private List<String> answers;
-
+    private List<Answer> answers;
 
     public int getId() {
         return id;
@@ -31,18 +32,18 @@ public class Question {
     public void setQuestion(String question) {
         this.question = question;
     }
-    
-    public List<String> getAnswers() {
+
+    public List<Answer> getAnswers() {
         return answers;
     }
 
-    public void setAnswers(List<String> answers) {
+    public void setAnswers(List<Answer> answers) {
         this.answers = answers;
     }
-
-   public void displayInfo(){
-       System.out.println("id = " + id + "\n" +  "question = " + question +"\n" + "answers = " + answers);
-   }
+    
+    public void displayNonStringCollection(){
+        System.out.println("id = " + id + "\n" + "name = " + question + "\n" + "answers = " + answers);
+    }
     
     
 }

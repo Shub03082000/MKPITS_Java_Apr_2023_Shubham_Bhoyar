@@ -20,12 +20,14 @@ and open the template in the editor.
         <property name="city">
             <value>Nagpur</value>
         </property>
-        <property name="address" ref="add"></property>    
+        <property name="address" ref="address"></property>    
     </bean>
     
-    <bean id="add" class="employee.Address">
+    <bean id="address" class="employee.Address">
         <property name="address" value="itwari"></property>
         <property name="state" value="Maharashtra"></property>
         <property name="country" value="India"></property>
     </bean>
+    
+    
 </beans>
