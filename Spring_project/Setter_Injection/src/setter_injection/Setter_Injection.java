@@ -37,6 +37,10 @@ public class Setter_Injection {
         QuestionNonString questionNonString = (QuestionNonString)context2.getBean("quesnonString");
         questionNonString.displayNonStringCollection();
         
+        System.out.println("------------ Autowire attribute which automatically inject object into constructor ------");
+        ApplicationContext contextAutowire = new ClassPathXmlApplicationContext("applicationContextAutowire.xml");
+        Employee employeeAutowire = (Employee)contextAutowire.getBean("employee");
+        employeeAutowire.display();
     }
     
 }
