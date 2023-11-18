@@ -8,6 +8,7 @@ package setter_injection;
 import employee.Employee;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import question.Question;
 
 /**
  *
@@ -23,6 +24,10 @@ public class Setter_Injection {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         Employee employee = (Employee)context.getBean("emp");
         employee.display();
+        
+        ApplicationContext context1 = new ClassPathXmlApplicationContext("applicationContext1.xml");
+        Question question = (Question)context1.getBean("ques");
+        question.displayInfo();
     }
     
 }
