@@ -22,4 +22,9 @@ public class StudentDaoImplementation implements StudentDao{
         TypedQuery<Student> typedQuery = entityManager.createQuery("from Student", Student.class);
         return typedQuery.getResultList();
     }
+
+    @Override
+    public Student findRecord(Integer rollNo) {
+        return entityManager.find(Student.class,rollNo);
+    }
 }

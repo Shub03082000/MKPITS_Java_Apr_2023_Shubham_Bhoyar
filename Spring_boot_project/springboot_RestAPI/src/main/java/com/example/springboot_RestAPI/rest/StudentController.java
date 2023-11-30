@@ -25,8 +25,8 @@ public class StudentController {
         return studentService.findAll();
     }
 
-//    @GetMapping("/student/{student}")
-//    public Student getStudentList(@PathVariable int rollNo){
-//        return studentService.findAll(rollNo);
-//    }
+    @GetMapping("/student/{rollNo}")
+    public Student getStudentList(@PathVariable int rollNo){
+        return studentService.findRecord(rollNo);
+    }
 }

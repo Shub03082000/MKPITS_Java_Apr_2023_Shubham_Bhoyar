@@ -20,4 +20,9 @@ public class StudentServiceImplementation implements StudentService{
     public List<Student> findAll() {
         return studentDao.findAll();
     }
+
+    @Override
+    public Student findRecord(Integer rollNo) {
+        return studentDao.findRecord(rollNo);
+    }
 }
