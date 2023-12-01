@@ -7,4 +7,7 @@ import java.util.List;
 public interface StudentService{
     List<Student> findAll();
     Student findRecord(Integer rollNo);
+    String save(Student student);
+    Student updateRecord(Student student);
+    String deleteRecord(Integer rollNo);
 }

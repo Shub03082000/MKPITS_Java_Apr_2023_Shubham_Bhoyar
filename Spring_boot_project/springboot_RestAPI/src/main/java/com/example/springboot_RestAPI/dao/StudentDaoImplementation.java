@@ -27,4 +27,23 @@ public class StudentDaoImplementation implements StudentDao{
     public Student findRecord(Integer rollNo) {
         return entityManager.find(Student.class,rollNo);
     }
+
+    @Override
+    public String save(Student student) {
+        entityManager.persist(student);
+        return "Data inserted successfully";
+    }
+
+    @Override
+    public Student updateRecord(Student student) {
+        Student student1 = entityManager.merge(student);
+        return student1;
+    }
+
+    @Override
+    public String deleteRecord(Integer rollNo) {
+       Student student= entityManager.find(Student.class,rollNo);
+        entityManager.remove(student);
+        return "Record deleted";
+    }
 }

@@ -1,12 +1,10 @@
 package com.example.springboot_RestAPI.rest;
 
+import com.example.springboot_RestAPI.dao.StudentDao;
 import com.example.springboot_RestAPI.entity.Student;
 import com.example.springboot_RestAPI.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -20,13 +18,28 @@ public class StudentController {
         this.studentService = studentService;
     }
 
-    @GetMapping("/student")
-    public List<Student> getStudent(){
+    @GetMapping("/students")
+    public List<Student> getStudents(){
         return studentService.findAll();
     }
 
-    @GetMapping("/student/{rollNo}")
-    public Student getStudentList(@PathVariable int rollNo){
+    @GetMapping("/students/{rollNo}")
+    public Student getStudent(@PathVariable int rollNo){
         return studentService.findRecord(rollNo);
+    }
+
+    @PostMapping("/students")
+    public String saveStudent(@RequestBody Student student){
+        return  studentService.save(student);
+    }
+
+    @PutMapping("/students")
+    public Student updateStudents(@RequestBody Student student){
+        return studentService.updateRecord(student);
+    }
+
+    @DeleteMapping("/students/{rollNo}")
+    public String removeStudent(@RequestBody @PathVariable Integer rollNo){
+        return studentService.deleteRecord(rollNo);
     }
 }
