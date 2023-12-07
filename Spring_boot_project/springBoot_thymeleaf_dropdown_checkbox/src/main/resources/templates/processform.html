@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous">
+</head>
+<body>
+<!--    RollNo: <span th:text="${stud.rollNo}"></span><br>-->
+<!--    Name: <span th:text="${stud.name}"></span><br>-->
+<!--    Address: <span th:text="${stud.address}"></span><br>-->
+<!--    City: <span th:text="${stud.city}"></span><br>-->
+<!--    Gender: <span th:text="${stud.gender}"></span><br>-->
+<!--    Course: <span th:text="*{stud.course}"></span>-->
+
+<h2 class="text-center">Student Details</h2>
+    <table class="table-success table table-striped-columns table-hover w-50" border cellpadding="4" cellspacing="0" align="center">
+        <tr>
+            <th>RollNo</th>
+            <td th:text="${stud.rollNo}"></td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td th:text="${stud.name}"></td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td th:text="${stud.address}"></td>
+        </tr>
+        <tr>
+            <th>City</th>
+            <td th:text="${stud.city}"></td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td th:text="${stud.gender}"></td>
+        </tr>
+        <tr>
+            <th>Course</th>
+            <td th:text="*{stud.course}"></td>
+        </tr>
+    </table>
+
+</body>
+</html>

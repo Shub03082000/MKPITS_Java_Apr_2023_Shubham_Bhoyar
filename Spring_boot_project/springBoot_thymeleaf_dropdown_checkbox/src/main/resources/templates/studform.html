@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form th:action="@{/processform}" th:object="${stud}" method="get">
+        <label>RollNo:</label>
+        <input type="number" th:field="*{rollNo}" >
+        <br>
+        <label>Name:</label>
+        <input type="text" th:field="*{name}" >
+        <br>
+        <label>Address:</label>
+        <input type="text" th:field="*{address}" >
+        <br>
+        <label>City:</label>
+        <select th:field="*{city}">
+            <option value="Nagpur">Nagpur</option>
+            <option value="Pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Chandrapur">Chandrapur</option>
+        </select>
+        <br>
+        <label th:field="*{gender}">Gender:</label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+        <input type="radio" name="gender" value="other">other
+        <br>
+        <label>Course:</label>
+        <input type="checkbox" name="course" value="java">java
+        <input type="checkbox" name="course" value="python">python
+        <input type="checkbox" name="course" value="php">php
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
