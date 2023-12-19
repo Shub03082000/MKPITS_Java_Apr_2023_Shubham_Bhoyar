@@ -31,16 +31,16 @@ public class StudentServiceImplementation implements StudentService{
     }
 
     @Override
-    public Student findById(Integer address_id) {
-        Optional optional = studentRepository.findById(address_id);
+    public Student findById(Integer rollno) {
+        Optional optional = studentRepository.findById(rollno);
         Student student = (Student) optional.get();
         return student;
     }
 
     @Override
     @Transactional
-    public String deleteById(Integer address_id) {
-        Optional optional = studentRepository.findById(address_id);
+    public String deleteById(Integer rollno) {
+        Optional optional = studentRepository.findById(rollno);
         Student student = (Student) optional.get();
         studentRepository.delete(student);
         return "Record deleted successfully";

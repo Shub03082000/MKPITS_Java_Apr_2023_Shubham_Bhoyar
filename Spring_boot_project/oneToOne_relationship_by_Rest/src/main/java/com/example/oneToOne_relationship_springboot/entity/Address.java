@@ -1,5 +1,6 @@
 package com.example.oneToOne_relationship_springboot.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 @Entity
@@ -11,7 +12,8 @@ public class Address {
     private String address;
     private String city;
 
-    @OneToOne(mappedBy = "address")
+    @JsonBackReference
+    @OneToOne(mappedBy = "address",cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH})
     private Student student;
 
     public Address(){
@@ -56,12 +58,4 @@ public class Address {
         this.city = city;
     }
 
-    @Override
-    public String toString() {
-        return "Address{" +
-                "addressid=" + addressid +
-                ", address='" + address + '\'' +
-                ", city='" + city + '\'' +
-                '}';
-    }
 }

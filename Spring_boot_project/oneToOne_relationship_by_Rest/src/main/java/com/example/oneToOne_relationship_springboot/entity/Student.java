@@ -1,5 +1,6 @@
 package com.example.oneToOne_relationship_springboot.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 @Entity
@@ -9,6 +10,7 @@ public class Student {
     private int rollno;
     private String name;
 
+    @JsonManagedReference
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "student_address_address_id")
     private Address address;
@@ -47,12 +49,5 @@ public class Student {
         this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "rollno=" + rollno +
-                ", name='" + name + '\'' +
-                ", address=" + address +
-                '}';
-    }
+
 }
